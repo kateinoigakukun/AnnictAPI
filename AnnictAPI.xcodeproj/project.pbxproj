@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E04829C91DE6E9C50038C7B6 /* AnnictAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04829BF1DE6E9C40038C7B6 /* AnnictAPI.framework */; };
+		E04829CE1DE6E9C50038C7B6 /* AnnictAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04829CD1DE6E9C50038C7B6 /* AnnictAPITests.swift */; };
+		E04829D01DE6E9C50038C7B6 /* AnnictAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = E04829C21DE6E9C40038C7B6 /* AnnictAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E04829DA1DE6E9EA0038C7B6 /* AnnictClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04829D91DE6E9EA0038C7B6 /* AnnictClient.swift */; };
+		E04829DC1DE6EA010038C7B6 /* AnnictRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04829DB1DE6EA010038C7B6 /* AnnictRequest.swift */; };
+		E04829DE1DE6EA0E0038C7B6 /* AnnictSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04829DD1DE6EA0E0038C7B6 /* AnnictSession.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E04829CA1DE6E9C50038C7B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E04829B61DE6E9C40038C7B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E04829BE1DE6E9C40038C7B6;
+			remoteInfo = AnnictAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E04829BF1DE6E9C40038C7B6 /* AnnictAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnnictAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04829C21DE6E9C40038C7B6 /* AnnictAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnictAPI.h; sourceTree = "<group>"; };
+		E04829C31DE6E9C40038C7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04829C81DE6E9C50038C7B6 /* AnnictAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnnictAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04829CD1DE6E9C50038C7B6 /* AnnictAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnictAPITests.swift; sourceTree = "<group>"; };
+		E04829CF1DE6E9C50038C7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04829D91DE6E9EA0038C7B6 /* AnnictClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictClient.swift; sourceTree = "<group>"; };
+		E04829DB1DE6EA010038C7B6 /* AnnictRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictRequest.swift; sourceTree = "<group>"; };
+		E04829DD1DE6EA0E0038C7B6 /* AnnictSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictSession.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E04829BB1DE6E9C40038C7B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04829C51DE6E9C50038C7B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04829C91DE6E9C50038C7B6 /* AnnictAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E04829B51DE6E9C40038C7B6 = {
+			isa = PBXGroup;
+			children = (
+				E04829C11DE6E9C40038C7B6 /* AnnictAPI */,
+				E04829CC1DE6E9C50038C7B6 /* AnnictAPITests */,
+				E04829C01DE6E9C40038C7B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E04829C01DE6E9C40038C7B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E04829BF1DE6E9C40038C7B6 /* AnnictAPI.framework */,
+				E04829C81DE6E9C50038C7B6 /* AnnictAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E04829C11DE6E9C40038C7B6 /* AnnictAPI */ = {
+			isa = PBXGroup;
+			children = (
+				E04829C21DE6E9C40038C7B6 /* AnnictAPI.h */,
+				E04829C31DE6E9C40038C7B6 /* Info.plist */,
+				E04829D91DE6E9EA0038C7B6 /* AnnictClient.swift */,
+				E04829DD1DE6EA0E0038C7B6 /* AnnictSession.swift */,
+				E04829DB1DE6EA010038C7B6 /* AnnictRequest.swift */,
+			);
+			path = AnnictAPI;
+			sourceTree = "<group>";
+		};
+		E04829CC1DE6E9C50038C7B6 /* AnnictAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				E04829CD1DE6E9C50038C7B6 /* AnnictAPITests.swift */,
+				E04829CF1DE6E9C50038C7B6 /* Info.plist */,
+			);
+			path = AnnictAPITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E04829BC1DE6E9C40038C7B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04829D01DE6E9C50038C7B6 /* AnnictAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E04829BE1DE6E9C40038C7B6 /* AnnictAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E04829D31DE6E9C50038C7B6 /* Build configuration list for PBXNativeTarget "AnnictAPI" */;
+			buildPhases = (
+				E04829BA1DE6E9C40038C7B6 /* Sources */,
+				E04829BB1DE6E9C40038C7B6 /* Frameworks */,
+				E04829BC1DE6E9C40038C7B6 /* Headers */,
+				E04829BD1DE6E9C40038C7B6 /* Resources */,
+				E04829DF1DE6F02D0038C7B6 /* Set up SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnnictAPI;
+			productName = AnnictAPI;
+			productReference = E04829BF1DE6E9C40038C7B6 /* AnnictAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E04829C71DE6E9C50038C7B6 /* AnnictAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E04829D61DE6E9C50038C7B6 /* Build configuration list for PBXNativeTarget "AnnictAPITests" */;
+			buildPhases = (
+				E04829C41DE6E9C50038C7B6 /* Sources */,
+				E04829C51DE6E9C50038C7B6 /* Frameworks */,
+				E04829C61DE6E9C50038C7B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E04829CB1DE6E9C50038C7B6 /* PBXTargetDependency */,
+			);
+			name = AnnictAPITests;
+			productName = AnnictAPITests;
+			productReference = E04829C81DE6E9C50038C7B6 /* AnnictAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E04829B61DE6E9C40038C7B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = kateinoigakukun;
+				TargetAttributes = {
+					E04829BE1DE6E9C40038C7B6 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					E04829C71DE6E9C50038C7B6 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E04829B91DE6E9C40038C7B6 /* Build configuration list for PBXProject "AnnictAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E04829B51DE6E9C40038C7B6;
+			productRefGroup = E04829C01DE6E9C40038C7B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E04829BE1DE6E9C40038C7B6 /* AnnictAPI */,
+				E04829C71DE6E9C50038C7B6 /* AnnictAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E04829BD1DE6E9C40038C7B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04829C61DE6E9C50038C7B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E04829DF1DE6F02D0038C7B6 /* Set up SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set up SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E04829BA1DE6E9C40038C7B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04829DC1DE6EA010038C7B6 /* AnnictRequest.swift in Sources */,
+				E04829DE1DE6EA0E0038C7B6 /* AnnictSession.swift in Sources */,
+				E04829DA1DE6E9EA0038C7B6 /* AnnictClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04829C41DE6E9C50038C7B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04829CE1DE6E9C50038C7B6 /* AnnictAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E04829CB1DE6E9C50038C7B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E04829BE1DE6E9C40038C7B6 /* AnnictAPI */;
+			targetProxy = E04829CA1DE6E9C50038C7B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E04829D11DE6E9C50038C7B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E04829D21DE6E9C50038C7B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E04829D41DE6E9C50038C7B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AnnictAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kateinoigakukun.AnnictAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E04829D51DE6E9C50038C7B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AnnictAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kateinoigakukun.AnnictAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E04829D71DE6E9C50038C7B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AnnictAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kateinoigakukun.AnnictAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E04829D81DE6E9C50038C7B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AnnictAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kateinoigakukun.AnnictAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E04829B91DE6E9C40038C7B6 /* Build configuration list for PBXProject "AnnictAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04829D11DE6E9C50038C7B6 /* Debug */,
+				E04829D21DE6E9C50038C7B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E04829D31DE6E9C50038C7B6 /* Build configuration list for PBXNativeTarget "AnnictAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04829D41DE6E9C50038C7B6 /* Debug */,
+				E04829D51DE6E9C50038C7B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E04829D61DE6E9C50038C7B6 /* Build configuration list for PBXNativeTarget "AnnictAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04829D71DE6E9C50038C7B6 /* Debug */,
+				E04829D81DE6E9C50038C7B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E04829B61DE6E9C40038C7B6 /* Project object */;
+}
