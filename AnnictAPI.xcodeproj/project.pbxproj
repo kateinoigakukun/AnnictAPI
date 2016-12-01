@@ -10,10 +10,12 @@
 		E04829C91DE6E9C50038C7B6 /* AnnictAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04829BF1DE6E9C40038C7B6 /* AnnictAPI.framework */; };
 		E04829CE1DE6E9C50038C7B6 /* AnnictAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04829CD1DE6E9C50038C7B6 /* AnnictAPITests.swift */; };
 		E04829D01DE6E9C50038C7B6 /* AnnictAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = E04829C21DE6E9C40038C7B6 /* AnnictAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E04829DA1DE6E9EA0038C7B6 /* AnnictClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04829D91DE6E9EA0038C7B6 /* AnnictClient.swift */; };
 		E0F602761DF019910016AC2A /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602731DF019910016AC2A /* APIKit.framework */; };
 		E0F602771DF019910016AC2A /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602741DF019910016AC2A /* Himotoki.framework */; };
 		E0F602781DF019910016AC2A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602751DF019910016AC2A /* Result.framework */; };
+		E0F6027A1DF01A670016AC2A /* AnnictRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F602791DF01A670016AC2A /* AnnictRequest.swift */; };
+		E0F6027C1DF01C250016AC2A /* AnnictClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F6027B1DF01C250016AC2A /* AnnictClient.swift */; };
+		E0F6027E1DF020900016AC2A /* AnnictSessionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F6027D1DF020900016AC2A /* AnnictSessionAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +35,12 @@
 		E04829C81DE6E9C50038C7B6 /* AnnictAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnnictAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04829CD1DE6E9C50038C7B6 /* AnnictAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnictAPITests.swift; sourceTree = "<group>"; };
 		E04829CF1DE6E9C50038C7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E04829D91DE6E9EA0038C7B6 /* AnnictClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictClient.swift; sourceTree = "<group>"; };
 		E0F602731DF019910016AC2A /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		E0F602741DF019910016AC2A /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		E0F602751DF019910016AC2A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		E0F602791DF01A670016AC2A /* AnnictRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictRequest.swift; sourceTree = "<group>"; };
+		E0F6027B1DF01C250016AC2A /* AnnictClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictClient.swift; sourceTree = "<group>"; };
+		E0F6027D1DF020900016AC2A /* AnnictSessionAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictSessionAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				E04829C21DE6E9C40038C7B6 /* AnnictAPI.h */,
+				E0F602791DF01A670016AC2A /* AnnictRequest.swift */,
+				E0F6027B1DF01C250016AC2A /* AnnictClient.swift */,
+				E0F6027D1DF020900016AC2A /* AnnictSessionAdapter.swift */,
 				E04829C31DE6E9C40038C7B6 /* Info.plist */,
-				E04829D91DE6E9EA0038C7B6 /* AnnictClient.swift */,
 			);
 			path = AnnictAPI;
 			sourceTree = "<group>";
@@ -238,7 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E04829DA1DE6E9EA0038C7B6 /* AnnictClient.swift in Sources */,
+				E0F6027E1DF020900016AC2A /* AnnictSessionAdapter.swift in Sources */,
+				E0F6027A1DF01A670016AC2A /* AnnictRequest.swift in Sources */,
+				E0F6027C1DF01C250016AC2A /* AnnictClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
