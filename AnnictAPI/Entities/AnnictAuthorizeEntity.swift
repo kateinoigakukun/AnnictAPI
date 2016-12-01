@@ -16,9 +16,9 @@ final class AnnictAuthorizeEntity {
     var created_at: Date
 
     required init(access_token: String,
-         token_type: String,
-         scope: String,
-         created_at: Date
+                  token_type: String,
+                  scope: String,
+                  created_at: Date
         ) {
         self.access_token = access_token
         self.token_type = token_type

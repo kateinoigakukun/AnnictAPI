@@ -34,29 +34,29 @@ public extension AnnictClient {
     public typealias AnnictAuthorizeFailureHandler = (AnnictError) -> Void
 
     public class func authorize(clientId: String,
-                         clientSecret: String,
-                         callbackURL: String,
-                         scope: AnnictOAuthAuthorize.AnnictScope,
-                         method: AnnictAuthorizeMethod,
-                         success: @escaping AnnictAuthorizeSuccessHandler,
-                         failure: @escaping AnnictAuthorizeFailureHandler) {
+                                clientSecret: String,
+                                callbackURL: String,
+                                scope: AnnictOAuthAuthorize.AnnictScope,
+                                method: AnnictAuthorizeMethod,
+                                success: @escaping AnnictAuthorizeSuccessHandler,
+                                failure: @escaping AnnictAuthorizeFailureHandler) {
 
         createAuthorizeRequest(clientId: clientId, clientSecret: clientSecret,
                                scope: scope, callbackURL: callbackURL,
                                method: method, success: success, failure: failure)
     }
-    
+
     class func createAuthorizeRequest(clientId: String,
-                                              clientSecret: String,
-                                              scope: AnnictOAuthAuthorize.AnnictScope,
-                                              callbackURL: String,
-                                              method: AnnictAuthorizeMethod,
-                                              responseType: String = "code",
-                                              success: @escaping AnnictAuthorizeSuccessHandler,
-                                              failure: @escaping AnnictAuthorizeFailureHandler) {
+                                      clientSecret: String,
+                                      scope: AnnictOAuthAuthorize.AnnictScope,
+                                      callbackURL: String,
+                                      method: AnnictAuthorizeMethod,
+                                      responseType: String = "code",
+                                      success: @escaping AnnictAuthorizeSuccessHandler,
+                                      failure: @escaping AnnictAuthorizeFailureHandler) {
 
         let codeRequest = AnnictOAuthAuthorize(client_id: clientId, response_type: responseType,
-                                            redirect_uri: callbackURL, scope: scope)
+                                               redirect_uri: callbackURL, scope: scope)
 
         guard let codeURLRequest = try? codeRequest.buildURLRequest(),
             let codeRequestURL = codeURLRequest.url else {
@@ -82,19 +82,19 @@ public extension AnnictClient {
                 let sfSafariVC = SFSafariViewController(url: codeRequestURL)
                 viewController.present(sfSafariVC, animated: true, completion: nil)
             }
-            
+
         case .custom(let handler):
             handler(codeRequestURL)
         }
     }
 
     class func requestAccessToken(clientId: String,
-                                          clientSecret: String,
-                                          authorizeCode: String,
-                                          callbackURL: String,
-                                          viewController: UIViewController,
-                                          success: @escaping AnnictAuthorizeSuccessHandler,
-                                          failure: @escaping AnnictAuthorizeFailureHandler) {
+                                  clientSecret: String,
+                                  authorizeCode: String,
+                                  callbackURL: String,
+                                  viewController: UIViewController,
+                                  success: @escaping AnnictAuthorizeSuccessHandler,
+                                  failure: @escaping AnnictAuthorizeFailureHandler) {
 
         let tokenRequest = AnnictOAuthToken(client_id: clientId, client_secret: clientSecret,
                                             grant_type: "authorization_code",

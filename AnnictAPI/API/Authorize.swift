@@ -38,7 +38,7 @@ public class AnnictOAuthAuthorize: AnnictRequest {
         self.response_type = response_type
         self.redirect_uri = redirect_uri
         self.scope = scope
-        
+
     }
 
     public enum AnnictScope: CustomStringConvertible {

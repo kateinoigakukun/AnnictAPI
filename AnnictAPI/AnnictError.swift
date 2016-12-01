@@ -20,5 +20,5 @@ public enum AnnictError: Error {
 
     /// Error while creating `Request.Response` from `(Data, URLResponse)`.
     case responseError(Error)
-
+    
 }
