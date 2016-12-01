@@ -12,7 +12,7 @@ import APIKit
 public protocol AnnictRequest: Request {}
 
 extension AnnictRequest {
-    var baseURL: String {
-        return "https://api.annict.com"
+    public var baseURL: URL {
+        return URL(string: "https://api.annict.com")!
     }
 }
