@@ -1,5 +1,5 @@
 //
-//  DeleteRecords.swift
+//  MeDeleteRecords.swift
 //  AnnictAPI
 //
 //  Created by SaitoYuta on 2016/12/03.

@@ -1,5 +1,5 @@
 //
-//  CreateRecords.swift
+//  MeEditRecords.swift
 //  AnnictAPI
 //
 //  Created by SaitoYuta on 2016/12/03.
@@ -9,20 +9,19 @@
 import Foundation
 import APIKit
 
-class AnnictMeCreateRecords: AnnictRequest {
+class AnnictMeEditRecords: AnnictRequest {
 
     typealias Response = AnnictRecordEntity
 
     var path: String {
-        return "/v1/me/records"
+        return "/v1/me/records\(id)"
     }
     var method: HTTPMethod {
-        return .post
+        return .patch
     }
 
     var queryParameters: [String : Any]? {
         var parameters: [String : String] = [:]
-        parameters["episode_id"] = episode_id.description
         _ = comment.map { parameters["comment"] = $0 }
         _ = rating.map { parameters["rating"] = $0.description }
         _ = share_twitter.map { parameters["share_twitter"] = $0.description }
@@ -31,20 +30,20 @@ class AnnictMeCreateRecords: AnnictRequest {
         return parameters
     }
 
-    var episode_id: Int
+    var id: Int
     var comment: String?
     var rating: Float?
     var share_twitter: Bool?
     var share_facebook: Bool?
 
     init(
-        episode_id: Int,
+        id: Int,
         comment: String? = nil,
         rating: Float? = nil,
         share_twitter: Bool? = nil,
         share_facebook: Bool? = nil
         ) {
-        self.episode_id = episode_id
+        self.id = id
         self.comment = comment
         self.rating = rating
         self.share_twitter = share_twitter
