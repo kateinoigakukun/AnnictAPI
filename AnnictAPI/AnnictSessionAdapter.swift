@@ -12,8 +12,8 @@ import APIKit
 private var dataTaskResponseBufferKey = 0
 private var taskAssociatedObjectCompletionHandlerKey = 0
 
-class AnnictSessionAdapter: URLSessionAdapter {
-    var accessToken: String
+public class AnnictSessionAdapter: URLSessionAdapter {
+    public var accessToken: String
 
     init(accessToken: String, configuration: URLSessionConfiguration) {
         self.accessToken = accessToken
