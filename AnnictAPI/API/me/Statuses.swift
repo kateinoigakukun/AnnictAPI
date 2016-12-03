@@ -28,23 +28,10 @@ class AnnictMeStatuses: AnnictRequest {
         return parameters
     }
 
-    enum StatusKind: CustomStringConvertible {
-        case wanna_watch
-        case watching
-        case watched
-        case on_hold
-        case stop_watching
-        case no_select
-
-        var description: String {
-            return String(describing: self)
-        }
-    }
-
     var work_id: Int
-    var kind: StatusKind
+    var kind: AnnictStatusKind
 
-    init(work_id: Int, kind: StatusKind) {
+    init(work_id: Int, kind: AnnictStatusKind) {
         self.work_id = work_id
         self.kind = kind
     }
