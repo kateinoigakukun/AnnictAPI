@@ -42,6 +42,7 @@
 		E0A826021DF2C460003BABE5 /* AnnictSortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826011DF2C460003BABE5 /* AnnictSortType.swift */; };
 		E0A826061DF2C762003BABE5 /* AnnictUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826051DF2C762003BABE5 /* AnnictUserEntity.swift */; };
 		E0A826081DF2CA34003BABE5 /* AnnictRecordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826071DF2CA34003BABE5 /* AnnictRecordEntity.swift */; };
+		E0A8260A1DF2CC88003BABE5 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826091DF2CC88003BABE5 /* Records.swift */; };
 		E0F602761DF019910016AC2A /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602731DF019910016AC2A /* APIKit.framework */; };
 		E0F602771DF019910016AC2A /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602741DF019910016AC2A /* Himotoki.framework */; };
 		E0F602781DF019910016AC2A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602751DF019910016AC2A /* Result.framework */; };
@@ -114,6 +115,7 @@
 		E0A826011DF2C460003BABE5 /* AnnictSortType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictSortType.swift; sourceTree = "<group>"; };
 		E0A826051DF2C762003BABE5 /* AnnictUserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictUserEntity.swift; sourceTree = "<group>"; };
 		E0A826071DF2CA34003BABE5 /* AnnictRecordEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictRecordEntity.swift; sourceTree = "<group>"; };
+		E0A826091DF2CC88003BABE5 /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		E0F602731DF019910016AC2A /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		E0F602741DF019910016AC2A /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		E0F602751DF019910016AC2A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				E087DA611DF03A120051F7CC /* Token.swift */,
 				E087DB181DF2ACDB0051F7CC /* Works.swift */,
 				E0A825FB1DF2B933003BABE5 /* Episodes.swift */,
+				E0A826091DF2CC88003BABE5 /* Records.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				E0A826081DF2CA34003BABE5 /* AnnictRecordEntity.swift in Sources */,
 				E0A826001DF2C428003BABE5 /* AnnictSeasonType.swift in Sources */,
 				E087DA5E1DF02F680051F7CC /* URL+Parse.swift in Sources */,
+				E0A8260A1DF2CC88003BABE5 /* Records.swift in Sources */,
 				E087DB161DF2AA280051F7CC /* URL+Decodable.swift in Sources */,
 				E0F6027A1DF01A670016AC2A /* AnnictRequest.swift in Sources */,
 				E087DA661DF0482F0051F7CC /* Date+Decodable.swift in Sources */,
