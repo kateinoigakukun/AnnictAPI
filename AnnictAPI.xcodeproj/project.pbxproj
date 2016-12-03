@@ -43,6 +43,7 @@
 		E0A826061DF2C762003BABE5 /* AnnictUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826051DF2C762003BABE5 /* AnnictUserEntity.swift */; };
 		E0A826081DF2CA34003BABE5 /* AnnictRecordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826071DF2CA34003BABE5 /* AnnictRecordEntity.swift */; };
 		E0A8260A1DF2CC88003BABE5 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826091DF2CC88003BABE5 /* Records.swift */; };
+		E0A8260D1DF2CE31003BABE5 /* Statuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A8260C1DF2CE31003BABE5 /* Statuses.swift */; };
 		E0F602761DF019910016AC2A /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602731DF019910016AC2A /* APIKit.framework */; };
 		E0F602771DF019910016AC2A /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602741DF019910016AC2A /* Himotoki.framework */; };
 		E0F602781DF019910016AC2A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602751DF019910016AC2A /* Result.framework */; };
@@ -116,6 +117,7 @@
 		E0A826051DF2C762003BABE5 /* AnnictUserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictUserEntity.swift; sourceTree = "<group>"; };
 		E0A826071DF2CA34003BABE5 /* AnnictRecordEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictRecordEntity.swift; sourceTree = "<group>"; };
 		E0A826091DF2CC88003BABE5 /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
+		E0A8260C1DF2CE31003BABE5 /* Statuses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statuses.swift; sourceTree = "<group>"; };
 		E0F602731DF019910016AC2A /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		E0F602741DF019910016AC2A /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		E0F602751DF019910016AC2A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -233,6 +235,14 @@
 			path = AnnictAPIDemo;
 			sourceTree = "<group>";
 		};
+		E0A8260B1DF2CE0D003BABE5 /* me */ = {
+			isa = PBXGroup;
+			children = (
+				E0A8260C1DF2CE31003BABE5 /* Statuses.swift */,
+			);
+			path = me;
+			sourceTree = "<group>";
+		};
 		E0F602721DF019910016AC2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +261,7 @@
 				E087DB181DF2ACDB0051F7CC /* Works.swift */,
 				E0A825FB1DF2B933003BABE5 /* Episodes.swift */,
 				E0A826091DF2CC88003BABE5 /* Records.swift */,
+				E0A8260B1DF2CE0D003BABE5 /* me */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -422,6 +433,7 @@
 				E0A826021DF2C460003BABE5 /* AnnictSortType.swift in Sources */,
 				E087DA641DF0445F0051F7CC /* AnnictNotification.swift in Sources */,
 				E0A825F81DF2B898003BABE5 /* Array+join.swift in Sources */,
+				E0A8260D1DF2CE31003BABE5 /* Statuses.swift in Sources */,
 				E087DB141DF0685C0051F7CC /* AnnictWorkEntity.swift in Sources */,
 				E0A826061DF2C762003BABE5 /* AnnictUserEntity.swift in Sources */,
 				E0F602891DF027FC0016AC2A /* AnnictAuthorizeEntity.swift in Sources */,
