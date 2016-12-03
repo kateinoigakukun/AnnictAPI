@@ -17,12 +17,14 @@ class AnnictWorkEntity {
     var media_text: String
     var season_name: String
     var season_name_text: String
-    var released_on: String
-    var released_on_about: String
-    var official_site_url: URL
-    var wikipedia_url: URL
-    var twitter_username: String
-    var twitter_hashtag: String
+//    TODO: Date型にする ====
+    var released_on: String?
+    var released_on_about: String?
+//    =====================
+    var official_site_url: URL?
+    var wikipedia_url: URL?
+    var twitter_username: String?
+    var twitter_hashtag: String?
     var episodes_count: String
     var watchers_count: Int
 
@@ -34,12 +36,12 @@ class AnnictWorkEntity {
         media_text: String,
         season_name: String,
         season_name_text: String,
-        released_on: String,
-        released_on_about: String,
-        official_site_url: URL,
-        wikipedia_url: URL,
-        twitter_username: String,
-        twitter_hashtag: String,
+        released_on: String?,
+        released_on_about: String?,
+        official_site_url: URL?,
+        wikipedia_url: URL?,
+        twitter_username: String?,
+        twitter_hashtag: String?,
         episodes_count: String,
         watchers_count: Int
         ) {
@@ -72,12 +74,12 @@ extension AnnictWorkEntity: Decodable {
             media_text: e <| "media_text",
             season_name: e <| "season_name",
             season_name_text: e <| "season_name_text",
-            released_on: e <| "released_on",
-            released_on_about: e <| "released_on_about",
-            official_site_url: e <| "official_site_url",
-            wikipedia_url: e <| "wikipedia_url",
-            twitter_username: e <| "twitter_username",
-            twitter_hashtag: e <| "twitter_hashtag",
+            released_on: e <|? "released_on",
+            released_on_about: e <|? "released_on_about",
+            official_site_url: e <|? "official_site_url",
+            wikipedia_url: e <|? "wikipedia_url",
+            twitter_username: e <|? "twitter_username",
+            twitter_hashtag: e <|? "twitter_hashtag",
             episodes_count: e <| "episodes_count",
             watchers_count: e <| "watchers_count")
     }

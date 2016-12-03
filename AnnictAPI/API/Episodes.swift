@@ -1,5 +1,5 @@
 //
-//  Works.swift
+//  Episodes.swift
 //  AnnictAPI
 //
 //  Created by SaitoYuta on 2016/12/03.
@@ -9,12 +9,12 @@
 import Foundation
 import APIKit
 
-class AnnictWorks: AnnictRequest {
+class AnnictEpisodes: AnnictRequest {
 
-    typealias Response = AnnictWorkEntity
+    typealias Response = AnnictEpisodeEntity
 
     var path: String {
-        return "/v1/works"
+        return "v1/episodes"
     }
     var method: HTTPMethod {
         return .get
@@ -24,72 +24,61 @@ class AnnictWorks: AnnictRequest {
         var parameters: [String : String] = [:]
         _ = fields.map { parameters["fields"] = $0.join(",") }
         _ = filter_ids.map { parameters["filter_ids"] = $0.join(",") }
-        _ = filter_season.map { parameters["filter_season"] = "\($0.year)-\($0.1.description)" }
+        _ = filter_work_id.map { parameters["filter_work_id"] = $0.description }
         _ = filter_title.map { parameters["filter_title"] = $0 }
         _ = page.map { parameters["page"] = $0.description }
         _ = per_page.map {parameters["per_page"] = $0.description }
         _ = sort_id.map { parameters["sort_id"] = $0.description }
-        _ = sort_season.map { parameters["sort_season"] = $0.description }
-        _ = sort_watchers_count.map { parameters["sort_watchers_count"] = $0.description }
+        _ = sort_sort_number.map { parameters["sort_sort_number"] = $0.description }
+
         return parameters
     }
 
     enum FieldType: CustomStringConvertible {
         case id
+        case number
+        case sort_number
         case title
-        case title_kana
-        case media
-        case media_text
-        case season_name
-        case season_name_text
-        case released_on
-        case released_on_about
-        case official_site_url
-        case wikipedia_url
-        case twitter_username
-        case twitter_hashtag
-        case episodes_count
-        case watchers_count
+        case records_count
+        case work
+        case prev_episode
+        case next_episode
 
         var description: String {
             return String(describing: self)
         }
-
     }
 
     var fields: [FieldType]?
     var filter_ids: [Int]?
-    var filter_season: (year: Int, AnnictSeasonType)?
+    var filter_work_id: Int?
     var filter_title: String?
     var page: Int?
     var per_page: Int?
     var sort_id: AnnictSortType?
-    var sort_season: AnnictSortType?
-    var sort_watchers_count: AnnictSortType?
+    var sort_sort_number: AnnictSortType?
 
     init(
         fields: [FieldType]? = nil,
         filter_ids: [Int]? = nil,
-        filter_season: (year: Int, AnnictSeasonType)? = nil,
-        filter_title: String? = nil,
+        filter_work_id: Int? = nil,
+        filter_title: String?,
         page: Int? = nil,
         per_page: Int? = nil,
         sort_id: AnnictSortType? = nil,
-        sort_season: AnnictSortType? = nil,
-        sort_watchers_count: AnnictSortType? = nil
+        sort_sort_number: AnnictSortType? = nil
         ) {
         self.fields = fields
         self.filter_ids = filter_ids
-        self.filter_season = filter_season
+        self.filter_work_id = filter_work_id
         self.filter_title = filter_title
         self.page = page
         self.per_page = per_page
         self.sort_id = sort_id
-        self.sort_season = sort_season
-        self.sort_watchers_count = sort_watchers_count
+        self.sort_sort_number = sort_sort_number
     }
 
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictWorkEntity {
-        return try AnnictWorkEntity.decodeValue(object)
+    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictEpisodeEntity {
+        return try AnnictEpisodeEntity.decodeValue(object)
     }
 }
