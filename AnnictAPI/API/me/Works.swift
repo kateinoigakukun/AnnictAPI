@@ -14,7 +14,7 @@ class AnnictMeWorks: AnnictRequest {
     typealias Response = AnnictWorkEntity
 
     var path: String {
-        return "/v1/works"
+        return "/v1/me/works"
     }
     var method: HTTPMethod {
         return .get
