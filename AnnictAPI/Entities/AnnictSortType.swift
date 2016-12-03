@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum AnnictSortType: CustomStringConvertible {
+public enum AnnictSortType: CustomStringConvertible {
     case asc
     case desc
 
-    var description: String {
+    public var description: String {
         return String(describing: self)
     }
 }

@@ -9,18 +9,18 @@
 import Foundation
 import APIKit
 
-class AnnictMeEditRecords: AnnictRequest {
+public class AnnictMeEditRecords: AnnictRequest {
 
-    typealias Response = AnnictRecordEntity
+    public typealias Response = AnnictRecordEntity
 
-    var path: String {
+    public var path: String {
         return "/v1/me/records\(id)"
     }
-    var method: HTTPMethod {
+    public var method: HTTPMethod {
         return .patch
     }
 
-    var queryParameters: [String : Any]? {
+    public var queryParameters: [String : Any]? {
         var parameters: [String : String] = [:]
         _ = comment.map { parameters["comment"] = $0 }
         _ = rating.map { parameters["rating"] = $0.description }
@@ -50,7 +50,7 @@ class AnnictMeEditRecords: AnnictRequest {
         self.share_facebook = share_facebook
     }
 
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictRecordEntity {
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictRecordEntity {
         return try AnnictRecordEntity.decodeValue(object)
     }
 }

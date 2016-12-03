@@ -9,7 +9,7 @@
 import Foundation
 import Himotoki
 
-class AnnictEpisodeEntity {
+public final class AnnictEpisodeEntity {
     var id: String
     var number: Int?
     var sort_number: Int
@@ -19,7 +19,7 @@ class AnnictEpisodeEntity {
     var prev_episode: AnnictEpisodeEntity?
     var next_episode: AnnictEpisodeEntity?
 
-    required init(
+    required public init(
         id: String,
         number: Int?,
         sort_number: Int,
@@ -41,7 +41,7 @@ class AnnictEpisodeEntity {
 }
 
 extension AnnictEpisodeEntity: Decodable {
-    static func decode(_ e: Extractor) throws -> Self {
+    public static func decode(_ e: Extractor) throws -> Self {
 
         return try self.init(
           id: e <| "id",

@@ -11,11 +11,19 @@ import APIKit
 import Result
 import SafariServices
 
-public class AnnictClient: Session {
-    init(accessToken: String) {
+private var taskRequestKey = 1
+public typealias AnnictClient = Session
+
+public extension AnnictClient {
+    public convenience init(accessToken: String) {
         let configuration = URLSessionConfiguration.default
         let adapter = AnnictSessionAdapter(accessToken: accessToken, configuration: configuration)
-        super.init(adapter: adapter)
+        self.init(adapter: adapter)
+
+    }
+
+    public var accessToken: String {
+        return (adapter as! AnnictSessionAdapter).accessToken
     }
 }
 

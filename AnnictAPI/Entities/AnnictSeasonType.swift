@@ -7,14 +7,14 @@
 //
 
 import Foundation
-enum AnnictSeasonType: CustomStringConvertible {
+public enum AnnictSeasonType: CustomStringConvertible {
     case all
     case spring
     case summer
     case autumn
     case winter
 
-    var description: String {
+    public var description: String {
         return String(describing: self)
     }
 }

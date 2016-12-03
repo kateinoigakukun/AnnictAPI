@@ -9,18 +9,18 @@
 import Foundation
 import APIKit
 
-class AnnictMeStatuses: AnnictRequest {
+public class AnnictMeStatuses: AnnictRequest {
 
-    typealias Response = Void
+    public typealias Response = Void
 
-    var path: String {
+    public var path: String {
         return "/v1/me/statuses"
     }
-    var method: HTTPMethod {
+    public var method: HTTPMethod {
         return .post
     }
 
-    var queryParameters: [String : Any]? {
+    public var queryParameters: [String : Any]? {
         var parameters:[String : String] = [:]
         parameters["work_id"] = work_id.description
         parameters["kind"] = kind.description
@@ -36,7 +36,7 @@ class AnnictMeStatuses: AnnictRequest {
         self.kind = kind
     }
 
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> () {
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> () {
         return
     }
 }

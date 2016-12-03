@@ -9,7 +9,7 @@
 import Foundation
 import Himotoki
 
-class AnnictRecordEntity {
+public final class AnnictRecordEntity {
     var id: String
     var comment: String
     var rating: Float?
@@ -22,7 +22,7 @@ class AnnictRecordEntity {
     var work: AnnictWorkEntity
     var episode: AnnictEpisodeEntity
 
-    required init(
+    required public init(
         id: String,
         comment: String,
         rating: Float?,
@@ -48,7 +48,7 @@ class AnnictRecordEntity {
 }
 
 extension AnnictRecordEntity: Decodable {
-    static func decode(_ e: Extractor) throws -> Self {
+    public static func decode(_ e: Extractor) throws -> Self {
         return try self.init(
             id: e <| "id",
             comment: e <| "comment",

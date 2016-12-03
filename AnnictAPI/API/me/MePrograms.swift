@@ -9,18 +9,18 @@
 import Foundation
 import APIKit
 
-class AnnictMePrograms: AnnictRequest {
+public class AnnictMePrograms: AnnictRequest {
 
-    typealias Response = AnnictProgramEntity
+    public typealias Response = AnnictProgramEntity
 
-    var path: String {
+    public var path: String {
         return "/v1/me/programs"
     }
-    var method: HTTPMethod {
+    public var method: HTTPMethod {
         return .get
     }
 
-    var queryParameters: [String : Any]? {
+    public var queryParameters: [String : Any]? {
         var parameters: [String : String] = [:]
         _ = fields.map { parameters["fields"] = $0.join(",") }
         _ = filter_ids.map { parameters["filter_ids"] = $0.join(",") }
@@ -94,7 +94,7 @@ class AnnictMePrograms: AnnictRequest {
         self.sort_started_at = sort_started_at
     }
 
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictProgramEntity {
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictProgramEntity {
         return try AnnictProgramEntity.decodeValue(object)
     }
 }

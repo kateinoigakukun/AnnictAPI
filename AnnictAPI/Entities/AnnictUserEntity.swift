@@ -9,7 +9,7 @@
 import Foundation
 import Himotoki
 
-class AnnictUserEntity {
+public final class AnnictUserEntity {
     var id: String
     var username: String
     var name: String
@@ -19,7 +19,7 @@ class AnnictUserEntity {
 //    TODO: Date型にする
     var created_at: String
 
-    required init(
+    required public init(
         id: String,
         username: String,
         name: String,
@@ -39,7 +39,7 @@ class AnnictUserEntity {
 }
 
 extension AnnictUserEntity: Decodable {
-    static func decode(_ e: Extractor) throws -> Self {
+    public static func decode(_ e: Extractor) throws -> Self {
         return try self.init(
             id: e <| "id",
             username: e <| "username",

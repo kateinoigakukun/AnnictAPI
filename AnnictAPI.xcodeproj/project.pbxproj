@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E04829C91DE6E9C50038C7B6 /* AnnictAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04829BF1DE6E9C40038C7B6 /* AnnictAPI.framework */; };
-		E04829CE1DE6E9C50038C7B6 /* AnnictAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04829CD1DE6E9C50038C7B6 /* AnnictAPITests.swift */; };
 		E04829D01DE6E9C50038C7B6 /* AnnictAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = E04829C21DE6E9C40038C7B6 /* AnnictAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E066F3FD1DF02A5400CEEA36 /* Authorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F602811DF025EA0016AC2A /* Authorize.swift */; };
 		E087DA5E1DF02F680051F7CC /* URL+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087DA5D1DF02F680051F7CC /* URL+Parse.swift */; };
@@ -16,9 +14,6 @@
 		E087DA621DF03A120051F7CC /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087DA611DF03A120051F7CC /* Token.swift */; };
 		E087DA641DF0445F0051F7CC /* AnnictNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087DA631DF0445F0051F7CC /* AnnictNotification.swift */; };
 		E087DA661DF0482F0051F7CC /* Date+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087DA651DF0482F0051F7CC /* Date+Decodable.swift */; };
-		E087DA681DF04CD40051F7CC /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602751DF019910016AC2A /* Result.framework */; };
-		E087DA691DF04CD40051F7CC /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602741DF019910016AC2A /* Himotoki.framework */; };
-		E087DA6A1DF04CD40051F7CC /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602731DF019910016AC2A /* APIKit.framework */; };
 		E087DAF31DF055440051F7CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087DAF21DF055440051F7CC /* AppDelegate.swift */; };
 		E087DAF51DF055440051F7CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087DAF41DF055440051F7CC /* ViewController.swift */; };
 		E087DAF81DF055440051F7CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E087DAF61DF055440051F7CC /* Main.storyboard */; };
@@ -52,6 +47,11 @@
 		E0A826191DF2DEDB003BABE5 /* MePrograms.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826181DF2DEDB003BABE5 /* MePrograms.swift */; };
 		E0A8261B1DF2DF15003BABE5 /* AnnictProgramEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A8261A1DF2DF15003BABE5 /* AnnictProgramEntity.swift */; };
 		E0A8261D1DF2DF6D003BABE5 /* AnnictChanelEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A8261C1DF2DF6D003BABE5 /* AnnictChanelEntity.swift */; };
+		E0A826351DF2F3B4003BABE5 /* AnnictAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826341DF2F3B4003BABE5 /* AnnictAPITests.swift */; };
+		E0A826371DF2F3B4003BABE5 /* AnnictAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04829BF1DE6E9C40038C7B6 /* AnnictAPI.framework */; };
+		E0A8263E1DF2F40B003BABE5 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602731DF019910016AC2A /* APIKit.framework */; };
+		E0A8263F1DF2F40B003BABE5 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602741DF019910016AC2A /* Himotoki.framework */; };
+		E0A826401DF2F40B003BABE5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602751DF019910016AC2A /* Result.framework */; };
 		E0F602761DF019910016AC2A /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602731DF019910016AC2A /* APIKit.framework */; };
 		E0F602771DF019910016AC2A /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602741DF019910016AC2A /* Himotoki.framework */; };
 		E0F602781DF019910016AC2A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602751DF019910016AC2A /* Result.framework */; };
@@ -62,14 +62,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E04829CA1DE6E9C50038C7B6 /* PBXContainerItemProxy */ = {
+		E087DB0A1DF055F00051F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E04829B61DE6E9C40038C7B6 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E04829BE1DE6E9C40038C7B6;
 			remoteInfo = AnnictAPI;
 		};
-		E087DB0A1DF055F00051F7CC /* PBXContainerItemProxy */ = {
+		E0A826381DF2F3B4003BABE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E04829B61DE6E9C40038C7B6 /* Project object */;
 			proxyType = 1;
@@ -99,9 +99,6 @@
 		E04829BF1DE6E9C40038C7B6 /* AnnictAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnnictAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04829C21DE6E9C40038C7B6 /* AnnictAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnictAPI.h; sourceTree = "<group>"; };
 		E04829C31DE6E9C40038C7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E04829C81DE6E9C50038C7B6 /* AnnictAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnnictAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E04829CD1DE6E9C50038C7B6 /* AnnictAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnictAPITests.swift; sourceTree = "<group>"; };
-		E04829CF1DE6E9C50038C7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E087DA5D1DF02F680051F7CC /* URL+Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Parse.swift"; sourceTree = "<group>"; };
 		E087DA5F1DF036440051F7CC /* AnnictError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictError.swift; sourceTree = "<group>"; };
 		E087DA611DF03A120051F7CC /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
@@ -134,6 +131,9 @@
 		E0A826181DF2DEDB003BABE5 /* MePrograms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MePrograms.swift; sourceTree = "<group>"; };
 		E0A8261A1DF2DF15003BABE5 /* AnnictProgramEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictProgramEntity.swift; sourceTree = "<group>"; };
 		E0A8261C1DF2DF6D003BABE5 /* AnnictChanelEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictChanelEntity.swift; sourceTree = "<group>"; };
+		E0A826321DF2F3B4003BABE5 /* AnnictAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnnictAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A826341DF2F3B4003BABE5 /* AnnictAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnictAPITests.swift; sourceTree = "<group>"; };
+		E0A826361DF2F3B4003BABE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0F602731DF019910016AC2A /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		E0F602741DF019910016AC2A /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		E0F602751DF019910016AC2A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -155,17 +155,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E04829C51DE6E9C50038C7B6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E087DA681DF04CD40051F7CC /* Result.framework in Frameworks */,
-				E087DA691DF04CD40051F7CC /* Himotoki.framework in Frameworks */,
-				E087DA6A1DF04CD40051F7CC /* APIKit.framework in Frameworks */,
-				E04829C91DE6E9C50038C7B6 /* AnnictAPI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E087DAED1DF055440051F7CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +166,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0A8262F1DF2F3B4003BABE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A8263E1DF2F40B003BABE5 /* APIKit.framework in Frameworks */,
+				E0A8263F1DF2F40B003BABE5 /* Himotoki.framework in Frameworks */,
+				E0A826401DF2F40B003BABE5 /* Result.framework in Frameworks */,
+				E0A826371DF2F3B4003BABE5 /* AnnictAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -184,8 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				E04829C11DE6E9C40038C7B6 /* AnnictAPI */,
-				E04829CC1DE6E9C50038C7B6 /* AnnictAPITests */,
 				E087DAF11DF055440051F7CC /* AnnictAPIDemo */,
+				E0A826331DF2F3B4003BABE5 /* AnnictAPITests */,
 				E04829C01DE6E9C40038C7B6 /* Products */,
 				E0F602721DF019910016AC2A /* Frameworks */,
 			);
@@ -195,8 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				E04829BF1DE6E9C40038C7B6 /* AnnictAPI.framework */,
-				E04829C81DE6E9C50038C7B6 /* AnnictAPITests.xctest */,
 				E087DAF01DF055440051F7CC /* AnnictAPIDemo.app */,
+				E0A826321DF2F3B4003BABE5 /* AnnictAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,15 +215,6 @@
 				E04829C31DE6E9C40038C7B6 /* Info.plist */,
 			);
 			path = AnnictAPI;
-			sourceTree = "<group>";
-		};
-		E04829CC1DE6E9C50038C7B6 /* AnnictAPITests */ = {
-			isa = PBXGroup;
-			children = (
-				E04829CD1DE6E9C50038C7B6 /* AnnictAPITests.swift */,
-				E04829CF1DE6E9C50038C7B6 /* Info.plist */,
-			);
-			path = AnnictAPITests;
 			sourceTree = "<group>";
 		};
 		E087DA5C1DF02F040051F7CC /* Helper */ = {
@@ -262,6 +253,15 @@
 				E0A826181DF2DEDB003BABE5 /* MePrograms.swift */,
 			);
 			path = me;
+			sourceTree = "<group>";
+		};
+		E0A826331DF2F3B4003BABE5 /* AnnictAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				E0A826341DF2F3B4003BABE5 /* AnnictAPITests.swift */,
+				E0A826361DF2F3B4003BABE5 /* Info.plist */,
+			);
+			path = AnnictAPITests;
 			sourceTree = "<group>";
 		};
 		E0F602721DF019910016AC2A /* Frameworks */ = {
@@ -336,24 +336,6 @@
 			productReference = E04829BF1DE6E9C40038C7B6 /* AnnictAPI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E04829C71DE6E9C50038C7B6 /* AnnictAPITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E04829D61DE6E9C50038C7B6 /* Build configuration list for PBXNativeTarget "AnnictAPITests" */;
-			buildPhases = (
-				E04829C41DE6E9C50038C7B6 /* Sources */,
-				E04829C51DE6E9C50038C7B6 /* Frameworks */,
-				E04829C61DE6E9C50038C7B6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E04829CB1DE6E9C50038C7B6 /* PBXTargetDependency */,
-			);
-			name = AnnictAPITests;
-			productName = AnnictAPITests;
-			productReference = E04829C81DE6E9C50038C7B6 /* AnnictAPITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		E087DAEF1DF055440051F7CC /* AnnictAPIDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E087DAFF1DF055440051F7CC /* Build configuration list for PBXNativeTarget "AnnictAPIDemo" */;
@@ -373,6 +355,24 @@
 			productReference = E087DAF01DF055440051F7CC /* AnnictAPIDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E0A826311DF2F3B4003BABE5 /* AnnictAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0A8263A1DF2F3B4003BABE5 /* Build configuration list for PBXNativeTarget "AnnictAPITests" */;
+			buildPhases = (
+				E0A8262E1DF2F3B4003BABE5 /* Sources */,
+				E0A8262F1DF2F3B4003BABE5 /* Frameworks */,
+				E0A826301DF2F3B4003BABE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0A826391DF2F3B4003BABE5 /* PBXTargetDependency */,
+			);
+			name = AnnictAPITests;
+			productName = AnnictAPITests;
+			productReference = E0A826321DF2F3B4003BABE5 /* AnnictAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -389,13 +389,13 @@
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
-					E04829C71DE6E9C50038C7B6 = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-					};
 					E087DAEF1DF055440051F7CC = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 2SG9N6FZ7L;
+						ProvisioningStyle = Automatic;
+					};
+					E0A826311DF2F3B4003BABE5 = {
+						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -414,21 +414,14 @@
 			projectRoot = "";
 			targets = (
 				E04829BE1DE6E9C40038C7B6 /* AnnictAPI */,
-				E04829C71DE6E9C50038C7B6 /* AnnictAPITests */,
 				E087DAEF1DF055440051F7CC /* AnnictAPIDemo */,
+				E0A826311DF2F3B4003BABE5 /* AnnictAPITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E04829BD1DE6E9C40038C7B6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E04829C61DE6E9C50038C7B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -442,6 +435,13 @@
 				E087DAFD1DF055440051F7CC /* LaunchScreen.storyboard in Resources */,
 				E087DAFA1DF055440051F7CC /* Assets.xcassets in Resources */,
 				E087DAF81DF055440051F7CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A826301DF2F3B4003BABE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,14 +485,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E04829C41DE6E9C50038C7B6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E04829CE1DE6E9C50038C7B6 /* AnnictAPITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E087DAEC1DF055440051F7CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -502,18 +494,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0A8262E1DF2F3B4003BABE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A826351DF2F3B4003BABE5 /* AnnictAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E04829CB1DE6E9C50038C7B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E04829BE1DE6E9C40038C7B6 /* AnnictAPI */;
-			targetProxy = E04829CA1DE6E9C50038C7B6 /* PBXContainerItemProxy */;
-		};
 		E087DB0B1DF055F00051F7CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E04829BE1DE6E9C40038C7B6 /* AnnictAPI */;
 			targetProxy = E087DB0A1DF055F00051F7CC /* PBXContainerItemProxy */;
+		};
+		E0A826391DF2F3B4003BABE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E04829BE1DE6E9C40038C7B6 /* AnnictAPI */;
+			targetProxy = E0A826381DF2F3B4003BABE5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -685,38 +685,6 @@
 			};
 			name = Release;
 		};
-		E04829D71DE6E9C50038C7B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = AnnictAPITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kateinoigakukun.AnnictAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		E04829D81DE6E9C50038C7B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = AnnictAPITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kateinoigakukun.AnnictAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		E087DB001DF055440051F7CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -755,6 +723,38 @@
 			};
 			name = Release;
 		};
+		E0A8263B1DF2F3B4003BABE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AnnictAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = kateinoigakukun.AnnictAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E0A8263C1DF2F3B4003BABE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AnnictAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = kateinoigakukun.AnnictAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -776,15 +776,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E04829D61DE6E9C50038C7B6 /* Build configuration list for PBXNativeTarget "AnnictAPITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E04829D71DE6E9C50038C7B6 /* Debug */,
-				E04829D81DE6E9C50038C7B6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		E087DAFF1DF055440051F7CC /* Build configuration list for PBXNativeTarget "AnnictAPIDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -793,6 +784,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E0A8263A1DF2F3B4003BABE5 /* Build configuration list for PBXNativeTarget "AnnictAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0A8263B1DF2F3B4003BABE5 /* Debug */,
+				E0A8263C1DF2F3B4003BABE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

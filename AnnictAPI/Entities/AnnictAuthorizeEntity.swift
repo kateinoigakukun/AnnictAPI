@@ -9,13 +9,13 @@
 import Foundation
 import Himotoki
 
-final class AnnictAuthorizeEntity {
+public final class AnnictAuthorizeEntity {
     var access_token: String
     var token_type: String
     var scope: String
     var created_at: Date
 
-    required init(access_token: String,
+    required public init(access_token: String,
                   token_type: String,
                   scope: String,
                   created_at: Date

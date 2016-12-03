@@ -9,18 +9,18 @@
 import Foundation
 import APIKit
 
-class AnnictOAuthToken: AnnictRequest {
+public class AnnictOAuthToken: AnnictRequest {
 
-    typealias Response = AnnictAuthorizeEntity
+    public typealias Response = AnnictAuthorizeEntity
 
-    var path: String {
+    public var path: String {
         return "/oauth/token"
     }
-    var method: HTTPMethod {
+    public var method: HTTPMethod {
         return .post
     }
 
-    var queryParameters: [String : Any]? {
+    public var queryParameters: [String : Any]? {
         var parameters: [String : String] = [:]
         parameters["client_id"] = client_id
         parameters["client_secret"] = client_secret
@@ -49,7 +49,7 @@ class AnnictOAuthToken: AnnictRequest {
         self.redirect_uri = redirect_uri
     }
 
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictAuthorizeEntity {
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictAuthorizeEntity {
         return try Response.decodeValue(object)
     }
 }

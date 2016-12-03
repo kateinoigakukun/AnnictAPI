@@ -10,7 +10,7 @@ import Foundation
 import APIKit
 import Himotoki
 
-public class AnnictOAuthAuthorize: AnnictRequest {
+public final class AnnictOAuthAuthorize: AnnictRequest {
 
     public typealias Response = String
 

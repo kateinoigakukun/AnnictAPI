@@ -9,18 +9,18 @@
 import Foundation
 import APIKit
 
-class AnnictMeDeleteRecords: AnnictRequest {
+public class AnnictMeDeleteRecords: AnnictRequest {
 
-    typealias Response = Void
+    public typealias Response = Void
 
-    var path: String {
+    public var path: String {
         return "/v1/me/records\(id)"
     }
-    var method: HTTPMethod {
+    public var method: HTTPMethod {
         return .delete
     }
 
-    var queryParameters: [String : Any]? {
+    public var queryParameters: [String : Any]? {
         return nil
     }
 
@@ -30,7 +30,7 @@ class AnnictMeDeleteRecords: AnnictRequest {
         self.id = id
     }
 
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> () {
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> () {
         return
     }
 }

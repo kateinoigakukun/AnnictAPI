@@ -9,18 +9,18 @@
 import Foundation
 import APIKit
 
-class AnnictWorks: AnnictRequest {
+public class AnnictWorks: AnnictRequest {
 
-    typealias Response = AnnictWorkEntity
+    public typealias Response = AnnictWorkEntity
 
-    var path: String {
+    public var path: String {
         return "/v1/works"
     }
-    var method: HTTPMethod {
+    public var method: HTTPMethod {
         return .get
     }
 
-    var queryParameters: [String : Any]? {
+    public var queryParameters: [String : Any]? {
         var parameters: [String : String] = [:]
         _ = fields.map { parameters["fields"] = $0.join(",") }
         _ = filter_ids.map { parameters["filter_ids"] = $0.join(",") }
@@ -34,7 +34,7 @@ class AnnictWorks: AnnictRequest {
         return parameters
     }
 
-    enum FieldType: CustomStringConvertible {
+    enum FieldType {
         case id
         case title
         case title_kana
@@ -89,7 +89,7 @@ class AnnictWorks: AnnictRequest {
         self.sort_watchers_count = sort_watchers_count
     }
 
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictWorkEntity {
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictWorkEntity {
         return try AnnictWorkEntity.decodeValue(object)
     }
 }

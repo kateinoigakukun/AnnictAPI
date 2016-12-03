@@ -9,7 +9,7 @@
 import Foundation
 import Himotoki
 
-class AnnictWorkEntity {
+public final class AnnictWorkEntity {
     var id: String
     var title: String
     var title_kana: String
@@ -28,7 +28,7 @@ class AnnictWorkEntity {
     var episodes_count: String
     var watchers_count: Int
 
-    required init(
+    required public init(
         id: String,
         title: String,
         title_kana: String,
@@ -65,7 +65,8 @@ class AnnictWorkEntity {
 }
 
 extension AnnictWorkEntity: Decodable {
-    static func decode(_ e: Extractor) throws -> Self {
+    public static func decode(_ e: Extractor) throws -> Self {
+        print(e)
         return try self.init(
             id: e <| "id",
             title: e <| "title",

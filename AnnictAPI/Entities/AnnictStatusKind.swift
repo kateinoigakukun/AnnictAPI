@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum AnnictStatusKind: CustomStringConvertible {
+public enum AnnictStatusKind: CustomStringConvertible {
     case wanna_watch
     case watching
     case watched
@@ -16,7 +16,7 @@ enum AnnictStatusKind: CustomStringConvertible {
     case stop_watching
     case no_select
 
-    var description: String {
+    public var description: String {
         return String(describing: self)
     }
 }

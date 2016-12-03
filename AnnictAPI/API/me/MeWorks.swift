@@ -9,18 +9,18 @@
 import Foundation
 import APIKit
 
-class AnnictMeWorks: AnnictRequest {
+public class AnnictMeWorks: AnnictRequest {
 
-    typealias Response = AnnictWorkEntity
+    public typealias Response = AnnictWorkEntity
 
-    var path: String {
+    public var path: String {
         return "/v1/me/works"
     }
-    var method: HTTPMethod {
+    public var method: HTTPMethod {
         return .get
     }
 
-    var queryParameters: [String : Any]? {
+    public var queryParameters: [String : Any]? {
         var parameters: [String : String] = [:]
         _ = fields.map { parameters["fields"] = $0.join(",") }
         _ = filter_ids.map { parameters["filter_ids"] = $0.join(",") }
@@ -35,7 +35,7 @@ class AnnictMeWorks: AnnictRequest {
         return parameters
     }
 
-    enum FieldType: CustomStringConvertible {
+    public enum FieldType: CustomStringConvertible {
         case id
         case title
         case title_kana
@@ -52,7 +52,7 @@ class AnnictMeWorks: AnnictRequest {
         case episodes_count
         case watchers_count
 
-        var description: String {
+        public var description: String {
             return String(describing: self)
         }
 
@@ -69,7 +69,7 @@ class AnnictMeWorks: AnnictRequest {
     var sort_season: AnnictSortType?
     var sort_watchers_count: AnnictSortType?
 
-    init(
+    public init(
         fields: [FieldType]? = nil,
         filter_ids: [Int]? = nil,
         filter_season: (year: Int, AnnictSeasonType)? = nil,
@@ -93,7 +93,7 @@ class AnnictMeWorks: AnnictRequest {
         self.sort_watchers_count = sort_watchers_count
     }
 
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictWorkEntity {
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictWorkEntity {
         return try AnnictWorkEntity.decodeValue(object)
     }
 }

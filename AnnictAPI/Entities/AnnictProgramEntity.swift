@@ -9,7 +9,7 @@
 import Foundation
 import Himotoki
 
-class AnnictProgramEntity {
+public final class AnnictProgramEntity {
     var id: String
 //    TODO: Date型にする
     var started_at: String
@@ -18,7 +18,7 @@ class AnnictProgramEntity {
     var work: AnnictWorkEntity
     var episode: AnnictEpisodeEntity
 
-    required init(
+    required public init(
         id: String,
         started_at: String,
         is_rebroadcast: Bool,
@@ -36,7 +36,7 @@ class AnnictProgramEntity {
 }
 
 extension AnnictProgramEntity: Decodable {
-    static func decode(_ e: Extractor) throws -> Self {
+    public static func decode(_ e: Extractor) throws -> Self {
         return try self.init(
             id: e <| "id",
             started_at: e <| "started_at",
