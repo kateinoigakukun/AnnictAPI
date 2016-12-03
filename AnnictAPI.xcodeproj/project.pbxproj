@@ -44,6 +44,9 @@
 		E0A826081DF2CA34003BABE5 /* AnnictRecordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826071DF2CA34003BABE5 /* AnnictRecordEntity.swift */; };
 		E0A8260A1DF2CC88003BABE5 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826091DF2CC88003BABE5 /* Records.swift */; };
 		E0A8260D1DF2CE31003BABE5 /* Statuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A8260C1DF2CE31003BABE5 /* Statuses.swift */; };
+		E0A8260F1DF2D3C7003BABE5 /* CreateRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A8260E1DF2D3C7003BABE5 /* CreateRecords.swift */; };
+		E0A826111DF2DC39003BABE5 /* EditRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826101DF2DC39003BABE5 /* EditRecords.swift */; };
+		E0A826131DF2DCD5003BABE5 /* DeleteRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826121DF2DCD5003BABE5 /* DeleteRecords.swift */; };
 		E0F602761DF019910016AC2A /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602731DF019910016AC2A /* APIKit.framework */; };
 		E0F602771DF019910016AC2A /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602741DF019910016AC2A /* Himotoki.framework */; };
 		E0F602781DF019910016AC2A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602751DF019910016AC2A /* Result.framework */; };
@@ -118,6 +121,9 @@
 		E0A826071DF2CA34003BABE5 /* AnnictRecordEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictRecordEntity.swift; sourceTree = "<group>"; };
 		E0A826091DF2CC88003BABE5 /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		E0A8260C1DF2CE31003BABE5 /* Statuses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statuses.swift; sourceTree = "<group>"; };
+		E0A8260E1DF2D3C7003BABE5 /* CreateRecords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecords.swift; sourceTree = "<group>"; };
+		E0A826101DF2DC39003BABE5 /* EditRecords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditRecords.swift; sourceTree = "<group>"; };
+		E0A826121DF2DCD5003BABE5 /* DeleteRecords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteRecords.swift; sourceTree = "<group>"; };
 		E0F602731DF019910016AC2A /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		E0F602741DF019910016AC2A /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		E0F602751DF019910016AC2A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -239,6 +245,9 @@
 			isa = PBXGroup;
 			children = (
 				E0A8260C1DF2CE31003BABE5 /* Statuses.swift */,
+				E0A8260E1DF2D3C7003BABE5 /* CreateRecords.swift */,
+				E0A826101DF2DC39003BABE5 /* EditRecords.swift */,
+				E0A826121DF2DCD5003BABE5 /* DeleteRecords.swift */,
 			);
 			path = me;
 			sourceTree = "<group>";
@@ -430,6 +439,7 @@
 			files = (
 				E066F3FD1DF02A5400CEEA36 /* Authorize.swift in Sources */,
 				E087DA601DF036440051F7CC /* AnnictError.swift in Sources */,
+				E0A826131DF2DCD5003BABE5 /* DeleteRecords.swift in Sources */,
 				E0A826021DF2C460003BABE5 /* AnnictSortType.swift in Sources */,
 				E087DA641DF0445F0051F7CC /* AnnictNotification.swift in Sources */,
 				E0A825F81DF2B898003BABE5 /* Array+join.swift in Sources */,
@@ -440,9 +450,11 @@
 				E0A825FC1DF2B933003BABE5 /* Episodes.swift in Sources */,
 				E0A825FE1DF2BB62003BABE5 /* AnnictEpisodeEntity.swift in Sources */,
 				E087DB191DF2ACDB0051F7CC /* Works.swift in Sources */,
+				E0A826111DF2DC39003BABE5 /* EditRecords.swift in Sources */,
 				E0F6027E1DF020900016AC2A /* AnnictSessionAdapter.swift in Sources */,
 				E0A826081DF2CA34003BABE5 /* AnnictRecordEntity.swift in Sources */,
 				E0A826001DF2C428003BABE5 /* AnnictSeasonType.swift in Sources */,
+				E0A8260F1DF2D3C7003BABE5 /* CreateRecords.swift in Sources */,
 				E087DA5E1DF02F680051F7CC /* URL+Parse.swift in Sources */,
 				E0A8260A1DF2CC88003BABE5 /* Records.swift in Sources */,
 				E087DB161DF2AA280051F7CC /* URL+Decodable.swift in Sources */,

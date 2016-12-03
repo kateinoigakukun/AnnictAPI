@@ -12,7 +12,7 @@ import Himotoki
 class AnnictRecordEntity {
     var id: String
     var comment: String
-    var rating: Float
+    var rating: Float?
     var is_modified: Bool
     var likes_count: Int
     var comments_count: Int
@@ -25,7 +25,7 @@ class AnnictRecordEntity {
     required init(
         id: String,
         comment: String,
-        rating: Float,
+        rating: Float?,
         is_modified: Bool,
         likes_count: Int,
         comments_count: Int,
@@ -52,7 +52,7 @@ extension AnnictRecordEntity: Decodable {
         return try self.init(
             id: e <| "id",
             comment: e <| "comment",
-            rating: e <| "rating",
+            rating: e <|? "rating",
             is_modified: e <| "is_modified",
             likes_count: e <| "likes_count",
             comments_count: e <| "comments_count",
