@@ -78,7 +78,7 @@ public class AnnictEpisodes: AnnictRequest {
         self.sort_sort_number = sort_sort_number
     }
 
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictEpisodeEntity {
-        return try AnnictEpisodeEntity.decodeValue(object)
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictEpisodeListEntity {
+        return try AnnictEpisodeListEntity.decodeValue(object)
     }
 }

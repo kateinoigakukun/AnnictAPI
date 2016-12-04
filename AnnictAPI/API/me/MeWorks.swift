@@ -11,7 +11,7 @@ import APIKit
 
 public class AnnictMeWorks: AnnictRequest {
 
-    public typealias Response = AnnictWorkEntity
+    public typealias Response = AnnictWorkListEntity
 
     public var path: String {
         return "/v1/me/works"
@@ -93,7 +93,7 @@ public class AnnictMeWorks: AnnictRequest {
         self.sort_watchers_count = sort_watchers_count
     }
 
-    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictWorkEntity {
-        return try AnnictWorkEntity.decodeValue(object)
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictWorkListEntity {
+        return try AnnictWorkListEntity.decodeValue(object)
     }
 }

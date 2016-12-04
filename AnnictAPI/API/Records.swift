@@ -76,7 +76,7 @@ public class AnnictRecords: AnnictRequest {
         self.sort_likes_count = sort_likes_count
     }
 
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictRecordEntity {
-        return try AnnictRecordEntity.decodeValue(object)
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictRecordListEntity {
+        return try AnnictRecordListEntity.decodeValue(object)
     }
 }

@@ -11,7 +11,7 @@ import APIKit
 
 public class AnnictMePrograms: AnnictRequest {
 
-    public typealias Response = AnnictProgramEntity
+    public typealias Response = AnnictProgramListEntity
 
     public var path: String {
         return "/v1/me/programs"
@@ -94,7 +94,7 @@ public class AnnictMePrograms: AnnictRequest {
         self.sort_started_at = sort_started_at
     }
 
-    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictProgramEntity {
-        return try AnnictProgramEntity.decodeValue(object)
+    public func response(from object: Any, urlResponse: HTTPURLResponse) throws -> AnnictProgramListEntity {
+        return try AnnictProgramListEntity.decodeValue(object)
     }
 }
