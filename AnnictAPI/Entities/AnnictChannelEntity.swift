@@ -1,5 +1,5 @@
 //
-//  AnnictChanelEntity.swift
+//  AnnictChannelEntity.swift
 //  AnnictAPI
 //
 //  Created by SaitoYuta on 2016/12/03.
@@ -9,17 +9,17 @@
 import Foundation
 import Himotoki
 
-public final class AnnictChanelEntity {
-    var id: String
+public final class AnnictChannelEntity {
+    var id: Int
     var name: String
 
-    required public init(id: String, name: String) {
+    required public init(id: Int, name: String) {
         self.id = id
         self.name = name
     }
 }
 
-extension AnnictChanelEntity: Decodable {
+extension AnnictChannelEntity: Decodable {
     public static func decode(_ e: Extractor) throws -> Self {
         return try self.init(id: e <| "id", name: e <| "name")
     }
