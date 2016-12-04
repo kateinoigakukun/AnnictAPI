@@ -34,7 +34,7 @@ class AnnictEpisodes: AnnictRequest {
         return parameters
     }
 
-    enum FieldType: CustomStringConvertible {
+    public enum FieldType {
         case id
         case number
         case sort_number
@@ -44,7 +44,7 @@ class AnnictEpisodes: AnnictRequest {
         case prev_episode
         case next_episode
 
-        var description: String {
+        public var description: String {
             return String(describing: self)
         }
     }

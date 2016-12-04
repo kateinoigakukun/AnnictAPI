@@ -35,7 +35,7 @@ public class AnnictMeWorks: AnnictRequest {
         return parameters
     }
 
-    public enum FieldType: CustomStringConvertible {
+    public enum FieldType {
         case id
         case title
         case title_kana

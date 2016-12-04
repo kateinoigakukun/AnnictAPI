@@ -33,7 +33,7 @@ class AnnictRecords: AnnictRequest {
         return parameters
     }
 
-    enum FieldType: CustomStringConvertible {
+    public enum FieldType {
         case id
         case comment
         case rating
@@ -45,7 +45,7 @@ class AnnictRecords: AnnictRequest {
         case work
         case episode
 
-        var description: String {
+        public var description: String {
             return String(describing: self)
         }
     }

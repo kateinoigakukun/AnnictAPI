@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum AnnictStatusKind: CustomStringConvertible {
+public enum AnnictStatusKind {
     case wanna_watch
     case watching
     case watched

@@ -41,7 +41,7 @@ public final class AnnictOAuthAuthorize: AnnictRequest {
 
     }
 
-    public enum AnnictScope: CustomStringConvertible {
+    public enum AnnictScope {
         case read
         case readWrite
 

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-public enum AnnictSeasonType: CustomStringConvertible {
+public enum AnnictSeasonType {
     case all
     case spring
     case summer

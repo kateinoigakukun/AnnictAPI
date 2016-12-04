@@ -34,7 +34,7 @@ public class AnnictWorks: AnnictRequest {
         return parameters
     }
 
-    enum FieldType {
+    public enum FieldType {
         case id
         case title
         case title_kana

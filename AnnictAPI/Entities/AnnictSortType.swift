@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum AnnictSortType: CustomStringConvertible {
+public enum AnnictSortType {
     case asc
     case desc
 
