@@ -58,11 +58,11 @@ public class AnnictEpisodes: AnnictRequest {
     var sort_id: AnnictSortType?
     var sort_sort_number: AnnictSortType?
 
-    init(
+    public init(
         fields: [FieldType]? = nil,
         filter_ids: [Int]? = nil,
         filter_work_id: Int? = nil,
-        filter_title: String?,
+        filter_title: String? = nil,
         page: Int? = nil,
         per_page: Int? = nil,
         sort_id: AnnictSortType? = nil,
