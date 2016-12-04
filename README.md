@@ -7,6 +7,14 @@ AnnictAPI is type safe API client for Annict.
 ##Requirements
 Swift 3.0
 
+##Installation
+
+#### [Carthage](https://github.com/Carthage/Carthage)
+
+- Insert `github "kateinoigakukun/AnnictAPI" ~> 0.1` to your Cartfile.
+- Run `carthage update`.
+- Link your app with `AnnictAPI.framework`, `APIKit.framework` and `Result.framework` in `Carthage/Build`.
+
 ##Usage
 
 ###Authorize
