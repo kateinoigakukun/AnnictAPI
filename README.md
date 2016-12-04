@@ -18,6 +18,22 @@ Swift 3.0
 ##Usage
 
 ###Authorize
+
+###Setting URLSchemes
+
+Set URLSchemes in Info tab
+
+###Handle URL in AppDelegate
+```swift
+func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+  if (url.scheme == "annict-client" && url.host == "callback") {
+    OAuthSwift.handle(url: url)
+  }
+  return true
+}
+```
+
+
 ```swift
 AnnictClient.authorize(
 	clientId: CLIENT_ID, clientSecret: CLIENT_SECRET,
