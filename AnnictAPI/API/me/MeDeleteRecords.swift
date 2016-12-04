@@ -14,7 +14,7 @@ public class AnnictMeDeleteRecords: AnnictRequest {
     public typealias Response = Void
 
     public var path: String {
-        return "/v1/me/records\(id)"
+        return "/v1/me/records/\(id)"
     }
     public var method: HTTPMethod {
         return .delete

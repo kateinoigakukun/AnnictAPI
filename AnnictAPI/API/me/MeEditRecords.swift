@@ -14,7 +14,7 @@ public class AnnictMeEditRecords: AnnictRequest {
     public typealias Response = AnnictRecordEntity
 
     public var path: String {
-        return "/v1/me/records\(id)"
+        return "/v1/me/records/\(id)"
     }
     public var method: HTTPMethod {
         return .patch
