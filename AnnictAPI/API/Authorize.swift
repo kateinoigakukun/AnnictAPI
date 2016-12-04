@@ -50,7 +50,7 @@ public final class AnnictOAuthAuthorize: AnnictRequest {
             case .read:
                 return "read"
             case .readWrite:
-                return "read+write"
+                return "read write"
             }
         }
     }
