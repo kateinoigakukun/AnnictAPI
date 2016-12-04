@@ -24,12 +24,15 @@ public class AnnictSessionAdapter: URLSessionAdapter {
     open override func createTask(with URLRequest: URLRequest, handler: @escaping (Data?, URLResponse?, Error?) -> Void) -> SessionTask {
         var URLRequest = URLRequest
 //        URLRequest.addValue("Authorization", forHTTPHeaderField: "Bearer \(self.accessToken)")
+
         var component = URLComponents(url: URLRequest.url!, resolvingAgainstBaseURL: true)
         var query = URLRequest.url?.queryItem
+        query?.forEach{ query?[$0.key] = $0.value.removingPercentEncoding }
         query?["access_token"] = accessToken
 
         component?.percentEncodedQuery = URLEncodedSerialization.string(from: query!)
         URLRequest.url = component?.url
+
         let task = urlSession.dataTask(with: URLRequest)
 
         setBuffer(NSMutableData(), forTask: task)
