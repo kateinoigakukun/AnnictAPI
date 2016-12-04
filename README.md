@@ -23,6 +23,8 @@ Swift 3.0
 
 Set URLSchemes in Info tab
 
+![SettnigURLScheme](Asset/SettingURLScheme.png)
+
 ####Handle URL in AppDelegate
 ```swift
 func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
