@@ -31,7 +31,7 @@ public class AnnictMeStatuses: AnnictRequest {
     var work_id: Int
     var kind: AnnictStatusKind
 
-    init(work_id: Int, kind: AnnictStatusKind) {
+    public init(work_id: Int, kind: AnnictStatusKind) {
         self.work_id = work_id
         self.kind = kind
     }

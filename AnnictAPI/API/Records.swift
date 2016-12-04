@@ -9,18 +9,18 @@
 import Foundation
 import APIKit
 
-class AnnictRecords: AnnictRequest {
+public class AnnictRecords: AnnictRequest {
 
-    typealias Response = AnnictRecordEntity
+    public typealias Response = AnnictRecordListEntity
 
-    var path: String {
+    public var path: String {
         return "v1/records"
     }
-    var method: HTTPMethod {
+    public var method: HTTPMethod {
         return .get
     }
 
-    var queryParameters: [String : Any]? {
+    public var queryParameters: [String : Any]? {
         var parameters: [String : String] = [:]
         _ = fields.map { parameters["fields"] = $0.join(",") }
         _ = filter_ids.map { parameters["filter_ids"] = $0.join(",") }
@@ -58,7 +58,7 @@ class AnnictRecords: AnnictRequest {
     var sort_id: AnnictSortType?
     var sort_likes_count: AnnictSortType?
 
-    init(
+    public init(
         fields: [FieldType]? = nil,
         filter_ids: [Int]? = nil,
         filter_episode_id: Int? = nil,

@@ -36,7 +36,7 @@ public class AnnictMeEditRecords: AnnictRequest {
     var share_twitter: Bool?
     var share_facebook: Bool?
 
-    init(
+    public init(
         id: Int,
         comment: String? = nil,
         rating: Float? = nil,

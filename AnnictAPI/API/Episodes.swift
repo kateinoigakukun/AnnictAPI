@@ -9,18 +9,18 @@
 import Foundation
 import APIKit
 
-class AnnictEpisodes: AnnictRequest {
+public class AnnictEpisodes: AnnictRequest {
 
-    typealias Response = AnnictEpisodeEntity
+    public typealias Response = AnnictEpisodeListEntity
 
-    var path: String {
+    public var path: String {
         return "v1/episodes"
     }
-    var method: HTTPMethod {
+    public var method: HTTPMethod {
         return .get
     }
 
-    var queryParameters: [String : Any]? {
+    public var queryParameters: [String : Any]? {
         var parameters: [String : String] = [:]
         _ = fields.map { parameters["fields"] = $0.join(",") }
         _ = filter_ids.map { parameters["filter_ids"] = $0.join(",") }

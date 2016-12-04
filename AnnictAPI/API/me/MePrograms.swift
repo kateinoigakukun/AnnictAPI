@@ -66,7 +66,7 @@ public class AnnictMePrograms: AnnictRequest {
     var sort_id: AnnictSortType?
     var sort_started_at: AnnictSortType?
 
-    init(
+    public init(
         fields: [FieldType]? = nil,
         filter_ids: [Int]? = nil,
         filter_channel_ids: [Int]? = nil,

@@ -67,7 +67,7 @@ public class AnnictWorks: AnnictRequest {
     var sort_season: AnnictSortType?
     var sort_watchers_count: AnnictSortType?
 
-    init(
+    public init(
         fields: [FieldType]? = nil,
         filter_ids: [Int]? = nil,
         filter_season: (year: Int, AnnictSeasonType)? = nil,

@@ -26,7 +26,7 @@ public class AnnictMeDeleteRecords: AnnictRequest {
 
     var id: Int
 
-    init(id: Int) {
+    public init(id: Int) {
         self.id = id
     }
 
