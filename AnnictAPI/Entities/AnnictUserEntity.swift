@@ -10,7 +10,7 @@ import Foundation
 import Himotoki
 
 public final class AnnictUserEntity {
-    var id: String
+    var id: Int
     var username: String
     var name: String
     var description: String
@@ -20,7 +20,7 @@ public final class AnnictUserEntity {
     var created_at: String
 
     required public init(
-        id: String,
+        id: Int,
         username: String,
         name: String,
         description: String,

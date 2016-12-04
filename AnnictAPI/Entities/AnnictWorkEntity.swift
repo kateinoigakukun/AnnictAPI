@@ -10,7 +10,7 @@ import Foundation
 import Himotoki
 
 public final class AnnictWorkEntity {
-    var id: String
+    var id: Int
     var title: String
     var title_kana: String
     var media: String
@@ -25,11 +25,11 @@ public final class AnnictWorkEntity {
     var wikipedia_url: URL?
     var twitter_username: String?
     var twitter_hashtag: String?
-    var episodes_count: String
+    var episodes_count: Int
     var watchers_count: Int
 
     required public init(
-        id: String,
+        id: Int,
         title: String,
         title_kana: String,
         media: String,
@@ -42,7 +42,7 @@ public final class AnnictWorkEntity {
         wikipedia_url: URL?,
         twitter_username: String?,
         twitter_hashtag: String?,
-        episodes_count: String,
+        episodes_count: Int,
         watchers_count: Int
         ) {
         self.id = id

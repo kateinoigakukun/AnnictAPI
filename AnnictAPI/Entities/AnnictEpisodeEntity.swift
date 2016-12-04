@@ -10,8 +10,8 @@ import Foundation
 import Himotoki
 
 public final class AnnictEpisodeEntity {
-    var id: String
-    var number: Int?
+    var id: Int
+    var number: String?
     var sort_number: Int
     var title: String
     var records_count: Int
@@ -20,8 +20,8 @@ public final class AnnictEpisodeEntity {
     var next_episode: AnnictEpisodeEntity?
 
     required public init(
-        id: String,
-        number: Int?,
+        id: Int,
+        number: String?,
         sort_number: Int,
         title: String,
         records_count: Int,
