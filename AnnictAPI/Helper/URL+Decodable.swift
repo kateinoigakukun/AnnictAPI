@@ -11,7 +11,13 @@ import Himotoki
 
 extension URL: Decodable {
     public static func decode(_ e: Extractor) throws -> URL {
-        guard let url = try self.init(string: String.decode(e)) else {
+        let url_str = try String.decode(e)
+        if url_str.isEmpty {
+            throw missingKeyPath(nil)
+        }
+
+        guard let encoded_url_str = url_str.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed),
+            let url = self.init(string: encoded_url_str) else {
             throw typeMismatch("URL", actual: e.rawValue, keyPath: nil)
         }
         return url

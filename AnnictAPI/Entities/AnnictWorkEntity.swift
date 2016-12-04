@@ -66,7 +66,6 @@ public final class AnnictWorkEntity {
 
 extension AnnictWorkEntity: Decodable {
     public static func decode(_ e: Extractor) throws -> Self {
-        print(e)
         return try self.init(
             id: e <| "id",
             title: e <| "title",
