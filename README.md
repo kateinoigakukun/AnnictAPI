@@ -19,11 +19,11 @@ Swift 3.0
 
 ###Authorize
 
-###Setting URLSchemes
+####Setting URLSchemes
 
 Set URLSchemes in Info tab
 
-###Handle URL in AppDelegate
+####Handle URL in AppDelegate
 ```swift
 func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
   if (url.scheme == "annict-client" && url.host == "callback") {
