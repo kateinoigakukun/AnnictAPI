@@ -1,8 +1,7 @@
 # AnnictAPI
 
-AnnictAPI is type safe API client for Annict.
-
 [![Language](https://img.shields.io/badge/swift-3.0-orange.svg)](http://swift.org)
+AnnictAPI is type safe API client for Annict.
 
 ##Requirements
 Swift 3.0
