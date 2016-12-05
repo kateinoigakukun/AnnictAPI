@@ -9,7 +9,7 @@
 import Foundation
 import APIKit
 
-public class AnnictMePrograms: AnnictRequest {
+public final class AnnictMePrograms: AnnictRequest {
 
     public typealias Response = AnnictProgramListEntity
 

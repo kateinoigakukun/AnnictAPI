@@ -9,7 +9,7 @@
 import Foundation
 import APIKit
 
-public class AnnictOAuthToken: AnnictRequest {
+public final class AnnictOAuthToken: AnnictRequest {
 
     public typealias Response = AnnictAuthorizeEntity
 

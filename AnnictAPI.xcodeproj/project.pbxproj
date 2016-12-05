@@ -53,6 +53,7 @@
 		E0A8263F1DF2F40B003BABE5 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602741DF019910016AC2A /* Himotoki.framework */; };
 		E0A826401DF2F40B003BABE5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602751DF019910016AC2A /* Result.framework */; };
 		E0A826421DF38794003BABE5 /* AnnictListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826411DF38794003BABE5 /* AnnictListEntity.swift */; };
+		E0A826811DF3CC62003BABE5 /* Enum+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A826801DF3CC62003BABE5 /* Enum+String.swift */; };
 		E0F602761DF019910016AC2A /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602731DF019910016AC2A /* APIKit.framework */; };
 		E0F602771DF019910016AC2A /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602741DF019910016AC2A /* Himotoki.framework */; };
 		E0F602781DF019910016AC2A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F602751DF019910016AC2A /* Result.framework */; };
@@ -136,6 +137,7 @@
 		E0A826341DF2F3B4003BABE5 /* AnnictAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnictAPITests.swift; sourceTree = "<group>"; };
 		E0A826361DF2F3B4003BABE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0A826411DF38794003BABE5 /* AnnictListEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictListEntity.swift; sourceTree = "<group>"; };
+		E0A826801DF3CC62003BABE5 /* Enum+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Enum+String.swift"; sourceTree = "<group>"; };
 		E0F602731DF019910016AC2A /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		E0F602741DF019910016AC2A /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		E0F602751DF019910016AC2A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				E087DA651DF0482F0051F7CC /* Date+Decodable.swift */,
 				E087DB151DF2AA280051F7CC /* URL+Decodable.swift */,
 				E0A825F71DF2B898003BABE5 /* Array+join.swift */,
+				E0A826801DF3CC62003BABE5 /* Enum+String.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				E066F3FD1DF02A5400CEEA36 /* Authorize.swift in Sources */,
 				E087DA601DF036440051F7CC /* AnnictError.swift in Sources */,
 				E0A826131DF2DCD5003BABE5 /* MeDeleteRecords.swift in Sources */,
+				E0A826811DF3CC62003BABE5 /* Enum+String.swift in Sources */,
 				E0A826021DF2C460003BABE5 /* AnnictSortType.swift in Sources */,
 				E087DA641DF0445F0051F7CC /* AnnictNotification.swift in Sources */,
 				E0A825F81DF2B898003BABE5 /* Array+join.swift in Sources */,

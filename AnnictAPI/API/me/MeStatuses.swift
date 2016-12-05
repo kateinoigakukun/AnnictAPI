@@ -9,7 +9,7 @@
 import Foundation
 import APIKit
 
-public class AnnictMeStatuses: AnnictRequest {
+public final class AnnictMeStatuses: AnnictRequest {
 
     public typealias Response = Void
 

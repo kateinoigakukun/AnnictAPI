@@ -9,7 +9,7 @@
 import Foundation
 import APIKit
 
-public class AnnictMeCreateRecords: AnnictRequest {
+public final class AnnictMeCreateRecords: AnnictRequest {
 
     public typealias Response = AnnictRecordEntity
 
