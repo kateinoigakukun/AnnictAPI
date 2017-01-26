@@ -8,12 +8,14 @@
 
 import Foundation
 import Himotoki
+import RealmSwift
 
-public final class AnnictChannelEntity {
-    var id: Int
-    var name: String
+public final class AnnictChannelEntity: Object {
+    dynamic var id: Int = 0
+    dynamic var name: String = ""
 
-    required public init(id: Int, name: String) {
+    convenience public init(id: Int, name: String) {
+        self.init()
         self.id = id
         self.name = name
     }

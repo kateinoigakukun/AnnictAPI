@@ -8,27 +8,36 @@
 
 import Foundation
 import Himotoki
+import RealmSwift
 
-public final class AnnictWorkEntity {
-    var id: Int
-    var title: String
-    var title_kana: String
-    var media: String
-    var media_text: String
-    var season_name: String
-    var season_name_text: String
+public final class AnnictWorkEntity: Object {
+    dynamic var id: Int = 0
+    dynamic var title: String = ""
+    dynamic var title_kana: String = ""
+    dynamic var media: String = ""
+    dynamic var media_text: String = ""
+    dynamic var season_name: String = ""
+    dynamic var season_name_text: String = ""
 //    TODO: Date型にする ====
-    var released_on: String?
-    var released_on_about: String?
+    dynamic var released_on: String? = nil
+    dynamic var released_on_about: String? = nil
 //    =====================
-    var official_site_url: URL?
-    var wikipedia_url: URL?
-    var twitter_username: String?
-    var twitter_hashtag: String?
-    var episodes_count: Int
-    var watchers_count: Int
+    private dynamic var _official_site_url: String? = nil
+    lazy var official_site_url: URL? = {
+        guard let url_str = self._official_site_url else { return nil }
+        return URL(string: url_str)
+    }()
+    private dynamic var _wikipedia_url: String? = nil
+    lazy var wikipedia_url: URL? = {
+        guard let url_str = self._wikipedia_url else { return nil }
+        return URL(string: url_str)
+    }()
+    dynamic var twitter_username: String? = nil
+    dynamic var twitter_hashtag: String? = nil
+    dynamic var episodes_count: Int = 0
+    dynamic var watchers_count: Int = 0
 
-    required public init(
+    convenience public init(
         id: Int,
         title: String,
         title_kana: String,
@@ -45,6 +54,7 @@ public final class AnnictWorkEntity {
         episodes_count: Int,
         watchers_count: Int
         ) {
+        self.init()
         self.id = id
         self.title = title
         self.title_kana = title_kana
@@ -54,8 +64,8 @@ public final class AnnictWorkEntity {
         self.season_name_text = season_name_text
         self.released_on = released_on
         self.released_on_about = released_on_about
-        self.official_site_url = official_site_url
-        self.wikipedia_url = wikipedia_url
+        self._official_site_url = official_site_url?.absoluteString
+        self._wikipedia_url = wikipedia_url?.absoluteString
         self.twitter_username = twitter_username
         self.twitter_hashtag = twitter_hashtag
         self.episodes_count = episodes_count

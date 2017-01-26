@@ -8,17 +8,18 @@
 
 import Foundation
 import Himotoki
+import RealmSwift
 
-public final class AnnictProgramEntity {
-    var id: Int
+public final class AnnictProgramEntity: Object {
+    dynamic var id: Int = 0
 //    TODO: Date型にする
-    var started_at: String
-    var is_rebroadcast: Bool
-    var channel: AnnictChannelEntity
-    var work: AnnictWorkEntity
-    var episode: AnnictEpisodeEntity
+    dynamic var started_at: String = ""
+    dynamic var is_rebroadcast: Bool = false
+    dynamic var channel: AnnictChannelEntity?
+    dynamic var work: AnnictWorkEntity?
+    dynamic var episode: AnnictEpisodeEntity?
 
-    required public init(
+    convenience public init(
         id: Int,
         started_at: String,
         is_rebroadcast: Bool,
@@ -26,6 +27,7 @@ public final class AnnictProgramEntity {
         work: AnnictWorkEntity,
         episode: AnnictEpisodeEntity
         ) {
+        self.init()
         self.id = id
         self.started_at = started_at
         self.is_rebroadcast = is_rebroadcast

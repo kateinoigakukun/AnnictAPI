@@ -8,18 +8,19 @@
 
 import Foundation
 import Himotoki
+import RealmSwift
 
-public final class AnnictEpisodeEntity {
-    var id: Int
-    var number: String?
-    var sort_number: Int
-    var title: String
-    var records_count: Int
-    var work: AnnictWorkEntity?
-    var prev_episode: AnnictEpisodeEntity?
-    var next_episode: AnnictEpisodeEntity?
+public final class AnnictEpisodeEntity: Object {
+    dynamic var id: Int = 0
+    dynamic var number: String? = nil
+    dynamic var sort_number: Int = 0
+    dynamic var title: String = ""
+    dynamic var records_count: Int = 0
+    dynamic var work: AnnictWorkEntity?
+    dynamic var prev_episode: AnnictEpisodeEntity?
+    dynamic var next_episode: AnnictEpisodeEntity?
 
-    required public init(
+    convenience public init(
         id: Int,
         number: String?,
         sort_number: Int,
@@ -29,6 +30,7 @@ public final class AnnictEpisodeEntity {
         prev_episode: AnnictEpisodeEntity?,
         next_episode: AnnictEpisodeEntity?
         ) {
+        self.init()
         self.id = id
         self.number = number
         self.sort_number = sort_number

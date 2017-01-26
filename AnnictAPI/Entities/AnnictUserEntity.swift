@@ -8,18 +8,23 @@
 
 import Foundation
 import Himotoki
+import RealmSwift
 
-public final class AnnictUserEntity {
-    var id: Int
-    var username: String
-    var name: String
-    var description: String
-    var url: URL?
-    var records_count: Int
+public final class AnnictUserEntity: Object {
+    dynamic var id: Int = 0
+    dynamic var username: String = ""
+    dynamic var name: String = ""
+    dynamic var description_: String = ""
+    dynamic var _url: String? = nil
+    lazy var url: URL? = {
+        guard let url_str = self._url else { return nil }
+        return URL(string: url_str)
+    }()
+    dynamic var records_count: Int = 0
 //    TODO: Date型にする
-    var created_at: String
+    dynamic var created_at: String = ""
 
-    required public init(
+    convenience public init(
         id: Int,
         username: String,
         name: String,
@@ -28,10 +33,11 @@ public final class AnnictUserEntity {
         records_count: Int,
         created_at: String
         ) {
+        self.init()
         self.id = id
         self.username = username
         self.name = name
-        self.description = description
+        self.description_ = description
         self.url = url
         self.records_count = records_count
         self.created_at = created_at

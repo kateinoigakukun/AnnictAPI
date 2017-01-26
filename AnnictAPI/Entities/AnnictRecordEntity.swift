@@ -8,21 +8,22 @@
 
 import Foundation
 import Himotoki
+import RealmSwift
 
-public final class AnnictRecordEntity {
-    var id: Int
-    var comment: String?
-    var rating: Float?
-    var is_modified: Bool
-    var likes_count: Int
-    var comments_count: Int
+public final class AnnictRecordEntity: Object {
+    dynamic var id: Int = 0
+    dynamic var comment: String? = nil
+    let rating = RealmOptional<Float>()
+    dynamic var is_modified: Bool = false
+    dynamic var likes_count: Int = 0
+    dynamic var comments_count: Int = 0
 //    TODO: Date型にする
-    var created_at: String
-    var user: AnnictUserEntity
-    var work: AnnictWorkEntity
-    var episode: AnnictEpisodeEntity
+    dynamic var created_at: String = ""
+    dynamic var user: AnnictUserEntity?
+    dynamic var work: AnnictWorkEntity?
+    dynamic var episode: AnnictEpisodeEntity?
 
-    required public init(
+    convenience public init(
         id: Int,
         comment: String?,
         rating: Float?,
@@ -34,9 +35,10 @@ public final class AnnictRecordEntity {
         work: AnnictWorkEntity,
         episode: AnnictEpisodeEntity
         ) {
+        self.init()
         self.id = id
         self.comment = comment
-        self.rating = rating
+        self.rating.value = rating
         self.is_modified = is_modified
         self.likes_count = likes_count
         self.comments_count = comments_count

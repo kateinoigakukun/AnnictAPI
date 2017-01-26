@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E03793EF1E399A6E00C89AAB /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03793EE1E399A6E00C89AAB /* RealmSwift.framework */; };
+		E03793F01E399A6E00C89AAB /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E03793EE1E399A6E00C89AAB /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E04829D01DE6E9C50038C7B6 /* AnnictAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = E04829C21DE6E9C40038C7B6 /* AnnictAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E066F3FD1DF02A5400CEEA36 /* Authorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F602811DF025EA0016AC2A /* Authorize.swift */; };
 		E087DA5E1DF02F680051F7CC /* URL+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087DA5D1DF02F680051F7CC /* URL+Parse.swift */; };
@@ -88,6 +90,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				E087DB0D1DF056C30051F7CC /* APIKit.framework in Embed Frameworks */,
+				E03793F01E399A6E00C89AAB /* RealmSwift.framework in Embed Frameworks */,
 				E087DB0E1DF056C30051F7CC /* Himotoki.framework in Embed Frameworks */,
 				E087DB0F1DF056C30051F7CC /* Result.framework in Embed Frameworks */,
 				E087DB091DF055F00051F7CC /* AnnictAPI.framework in Embed Frameworks */,
@@ -98,6 +101,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E03793EE1E399A6E00C89AAB /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		E04829BF1DE6E9C40038C7B6 /* AnnictAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnnictAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04829C21DE6E9C40038C7B6 /* AnnictAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnictAPI.h; sourceTree = "<group>"; };
 		E04829C31DE6E9C40038C7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E087DB101DF0575C0051F7CC /* APIKit.framework in Frameworks */,
+				E03793EF1E399A6E00C89AAB /* RealmSwift.framework in Frameworks */,
 				E087DB111DF0575C0051F7CC /* Himotoki.framework in Frameworks */,
 				E087DB121DF0575C0051F7CC /* Result.framework in Frameworks */,
 				E087DB081DF055F00051F7CC /* AnnictAPI.framework in Frameworks */,
@@ -187,6 +192,7 @@
 		E04829B51DE6E9C40038C7B6 = {
 			isa = PBXGroup;
 			children = (
+				E03793EE1E399A6E00C89AAB /* RealmSwift.framework */,
 				E04829C11DE6E9C40038C7B6 /* AnnictAPI */,
 				E087DAF11DF055440051F7CC /* AnnictAPIDemo */,
 				E0A826331DF2F3B4003BABE5 /* AnnictAPITests */,
@@ -800,6 +806,7 @@
 				E0A8263C1DF2F3B4003BABE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
