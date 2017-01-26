@@ -76,6 +76,10 @@ public final class AnnictWorkEntity: Object {
     override public static func primaryKey() -> String? {
         return "id"
     }
+
+    override public static func ignoredProperties() -> [String] {
+        return ["official_site_url","wikipedia_url"]
+    }
 }
 
 extension AnnictWorkEntity: Decodable {

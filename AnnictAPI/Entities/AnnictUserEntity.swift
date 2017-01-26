@@ -45,6 +45,9 @@ public final class AnnictUserEntity: Object {
     override public static func primaryKey() -> String? {
         return "id"
     }
+    override public static func ignoredProperties() -> [String] {
+        return ["url"]
+    }
 }
 
 extension AnnictUserEntity: Decodable {
