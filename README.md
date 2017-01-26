@@ -29,7 +29,7 @@ Set URLSchemes in Info tab
 ```swift
 func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
   if (url.scheme == "annict-client" && url.host == "callback") {
-    OAuthSwift.handle(url: url)
+    AnnictClient.handle(url: url)
   }
   return true
 }
