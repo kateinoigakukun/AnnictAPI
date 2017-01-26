@@ -11,14 +11,14 @@ import Himotoki
 import RealmSwift
 
 public final class AnnictEpisodeEntity: Object {
-    dynamic var id: Int = 0
-    dynamic var number: String? = nil
-    dynamic var sort_number: Int = 0
-    dynamic var title: String = ""
-    dynamic var records_count: Int = 0
-    dynamic var work: AnnictWorkEntity?
-    dynamic var prev_episode: AnnictEpisodeEntity?
-    dynamic var next_episode: AnnictEpisodeEntity?
+    public dynamic var id: Int = 0
+    public dynamic var number: String? = nil
+    public dynamic var sort_number: Int = 0
+    public dynamic var title: String = ""
+    public dynamic var records_count: Int = 0
+    public dynamic var work: AnnictWorkEntity?
+    public dynamic var prev_episode: AnnictEpisodeEntity?
+    public dynamic var next_episode: AnnictEpisodeEntity?
 
     convenience public init(
         id: Int,

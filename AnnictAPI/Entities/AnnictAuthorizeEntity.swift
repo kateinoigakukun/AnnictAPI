@@ -10,10 +10,10 @@ import Foundation
 import Himotoki
 
 public final class AnnictAuthorizeEntity {
-    var access_token: String
-    var token_type: String
-    var scope: String
-    var created_at: Date
+    public var access_token: String
+    public var token_type: String
+    public var scope: String
+    public var created_at: Date
 
     required public init(access_token: String,
                   token_type: String,

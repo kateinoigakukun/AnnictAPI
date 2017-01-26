@@ -11,31 +11,31 @@ import Himotoki
 import RealmSwift
 
 public final class AnnictWorkEntity: Object {
-    dynamic var id: Int = 0
-    dynamic var title: String = ""
-    dynamic var title_kana: String = ""
-    dynamic var media: String = ""
-    dynamic var media_text: String = ""
-    dynamic var season_name: String = ""
-    dynamic var season_name_text: String = ""
+    public dynamic var id: Int = 0
+    public dynamic var title: String = ""
+    public dynamic var title_kana: String = ""
+    public dynamic var media: String = ""
+    public dynamic var media_text: String = ""
+    public dynamic var season_name: String = ""
+    public dynamic var season_name_text: String = ""
 //    TODO: Date型にする ====
-    dynamic var released_on: String? = nil
-    dynamic var released_on_about: String? = nil
+    public dynamic var released_on: String? = nil
+    public dynamic var released_on_about: String? = nil
 //    =====================
     private dynamic var _official_site_url: String? = nil
-    lazy var official_site_url: URL? = {
+    public lazy var official_site_url: URL? = {
         guard let url_str = self._official_site_url else { return nil }
         return URL(string: url_str)
     }()
     private dynamic var _wikipedia_url: String? = nil
-    lazy var wikipedia_url: URL? = {
+    public lazy var wikipedia_url: URL? = {
         guard let url_str = self._wikipedia_url else { return nil }
         return URL(string: url_str)
     }()
-    dynamic var twitter_username: String? = nil
-    dynamic var twitter_hashtag: String? = nil
-    dynamic var episodes_count: Int = 0
-    dynamic var watchers_count: Int = 0
+    public dynamic var twitter_username: String? = nil
+    public dynamic var twitter_hashtag: String? = nil
+    public dynamic var episodes_count: Int = 0
+    public dynamic var watchers_count: Int = 0
 
     convenience public init(
         id: Int,

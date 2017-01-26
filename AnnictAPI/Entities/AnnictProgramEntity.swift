@@ -11,13 +11,13 @@ import Himotoki
 import RealmSwift
 
 public final class AnnictProgramEntity: Object {
-    dynamic var id: Int = 0
+    public dynamic var id: Int = 0
 //    TODO: Date型にする
-    dynamic var started_at: String = ""
-    dynamic var is_rebroadcast: Bool = false
-    dynamic var channel: AnnictChannelEntity?
-    dynamic var work: AnnictWorkEntity?
-    dynamic var episode: AnnictEpisodeEntity?
+    public dynamic var started_at: String = ""
+    public dynamic var is_rebroadcast: Bool = false
+    public dynamic var channel: AnnictChannelEntity?
+    public dynamic var work: AnnictWorkEntity?
+    public dynamic var episode: AnnictEpisodeEntity?
 
     convenience public init(
         id: Int,

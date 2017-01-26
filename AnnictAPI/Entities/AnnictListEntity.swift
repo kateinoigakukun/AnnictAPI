@@ -10,9 +10,9 @@ import Foundation
 import Himotoki
 
 public class AnnictPageEntity {
-    var next_page: Int?
-    var prev_page: Int?
-    var total_count: Int
+    public var next_page: Int?
+    public var prev_page: Int?
+    public var total_count: Int
 
     init(
         next_page: Int?,
@@ -26,7 +26,7 @@ public class AnnictPageEntity {
 }
 
 public class AnnictWorkListEntity: AnnictPageEntity {
-    var works: [AnnictWorkEntity]
+    public var works: [AnnictWorkEntity]
 
     required public init(works: [AnnictWorkEntity],
          next_page: Int?,
@@ -51,7 +51,7 @@ extension AnnictWorkListEntity: Decodable {
 }
 
 public class AnnictEpisodeListEntity: AnnictPageEntity {
-    var episodes: [AnnictEpisodeEntity]
+    public var episodes: [AnnictEpisodeEntity]
 
     required public init(episodes: [AnnictEpisodeEntity],
          next_page: Int?,
@@ -77,7 +77,7 @@ extension AnnictEpisodeListEntity: Decodable {
 }
 
 public class AnnictRecordListEntity: AnnictPageEntity {
-    var records: [AnnictRecordEntity]
+    public var records: [AnnictRecordEntity]
 
     required public init(records: [AnnictRecordEntity],
          next_page: Int?,
@@ -105,7 +105,7 @@ extension AnnictRecordListEntity: Decodable {
 
 
 public class AnnictProgramListEntity: AnnictPageEntity {
-    var programs: [AnnictProgramEntity]
+    public var programs: [AnnictProgramEntity]
 
     required public init(programs: [AnnictProgramEntity],
          next_page: Int?,

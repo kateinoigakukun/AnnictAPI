@@ -11,17 +11,17 @@ import Himotoki
 import RealmSwift
 
 public final class AnnictRecordEntity: Object {
-    dynamic var id: Int = 0
-    dynamic var comment: String? = nil
-    let rating = RealmOptional<Float>()
-    dynamic var is_modified: Bool = false
-    dynamic var likes_count: Int = 0
-    dynamic var comments_count: Int = 0
+    public dynamic var id: Int = 0
+    public dynamic var comment: String? = nil
+    public let rating = RealmOptional<Float>()
+    public dynamic var is_modified: Bool = false
+    public dynamic var likes_count: Int = 0
+    public dynamic var comments_count: Int = 0
 //    TODO: Date型にする
-    dynamic var created_at: String = ""
-    dynamic var user: AnnictUserEntity?
-    dynamic var work: AnnictWorkEntity?
-    dynamic var episode: AnnictEpisodeEntity?
+    public dynamic var created_at: String = ""
+    public dynamic var user: AnnictUserEntity?
+    public dynamic var work: AnnictWorkEntity?
+    public dynamic var episode: AnnictEpisodeEntity?
 
     convenience public init(
         id: Int,
