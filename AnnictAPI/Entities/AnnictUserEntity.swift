@@ -42,6 +42,9 @@ public final class AnnictUserEntity: Object {
         self.records_count = records_count
         self.created_at = created_at
     }
+    override public static func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 extension AnnictUserEntity: Decodable {

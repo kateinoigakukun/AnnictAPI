@@ -19,6 +19,9 @@ public final class AnnictChannelEntity: Object {
         self.id = id
         self.name = name
     }
+    override public static func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 extension AnnictChannelEntity: Decodable {

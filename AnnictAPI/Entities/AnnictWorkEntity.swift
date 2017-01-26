@@ -72,6 +72,10 @@ public final class AnnictWorkEntity: Object {
         self.watchers_count = watchers_count
         
     }
+
+    override public static func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 extension AnnictWorkEntity: Decodable {

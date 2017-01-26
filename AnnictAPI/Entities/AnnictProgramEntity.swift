@@ -35,6 +35,9 @@ public final class AnnictProgramEntity: Object {
         self.work = work
         self.episode = episode
     }
+    override public static func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 extension AnnictProgramEntity: Decodable {

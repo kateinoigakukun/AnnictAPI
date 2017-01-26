@@ -40,6 +40,9 @@ public final class AnnictEpisodeEntity: Object {
         self.prev_episode = prev_episode
         self.next_episode = next_episode
     }
+    override public static func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 extension AnnictEpisodeEntity: Decodable {
