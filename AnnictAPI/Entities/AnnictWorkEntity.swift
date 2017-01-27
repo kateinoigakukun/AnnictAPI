@@ -16,8 +16,8 @@ public final class AnnictWorkEntity: Object {
     public dynamic var title_kana: String = ""
     public dynamic var media: String = ""
     public dynamic var media_text: String = ""
-    public dynamic var season_name: String = ""
-    public dynamic var season_name_text: String = ""
+    public dynamic var season_name: String? = nil
+    public dynamic var season_name_text: String? = nil
 //    TODO: Date型にする ====
     public dynamic var released_on: String? = nil
     public dynamic var released_on_about: String? = nil
@@ -43,8 +43,8 @@ public final class AnnictWorkEntity: Object {
         title_kana: String,
         media: String,
         media_text: String,
-        season_name: String,
-        season_name_text: String,
+        season_name: String?,
+        season_name_text: String?,
         released_on: String?,
         released_on_about: String?,
         official_site_url: URL?,
@@ -90,8 +90,8 @@ extension AnnictWorkEntity: Decodable {
             title_kana: e <| "title_kana",
             media: e <| "media",
             media_text: e <| "media_text",
-            season_name: e <| "season_name",
-            season_name_text: e <| "season_name_text",
+            season_name: e <|? "season_name",
+            season_name_text: e <|? "season_name_text",
             released_on: e <|? "released_on",
             released_on_about: e <|? "released_on_about",
             official_site_url: e <|? "official_site_url",
