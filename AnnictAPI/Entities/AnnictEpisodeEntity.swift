@@ -14,7 +14,7 @@ public final class AnnictEpisodeEntity: Object {
     public dynamic var id: Int = 0
     public dynamic var number: String? = nil
     public dynamic var sort_number: Int = 0
-    public dynamic var title: String = ""
+    public dynamic var title: String? = nil
     public dynamic var records_count: Int = 0
     public dynamic var work: AnnictWorkEntity?
     public dynamic var prev_episode: AnnictEpisodeEntity?
@@ -24,7 +24,7 @@ public final class AnnictEpisodeEntity: Object {
         id: Int,
         number: String?,
         sort_number: Int,
-        title: String,
+        title: String?,
         records_count: Int,
         work: AnnictWorkEntity?,
         prev_episode: AnnictEpisodeEntity?,
@@ -52,7 +52,7 @@ extension AnnictEpisodeEntity: Decodable {
           id: e <| "id",
           number: e <|? "number",
           sort_number: e <| "sort_number",
-          title: e <| "title",
+          title: e <|? "title",
           records_count: e <| "records_count",
           work: e <|? "work",
           prev_episode: e <|? "prev_episode",
