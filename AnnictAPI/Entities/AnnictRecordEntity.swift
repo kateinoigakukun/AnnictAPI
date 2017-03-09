@@ -31,9 +31,9 @@ public final class AnnictRecordEntity: Object {
         likes_count: Int,
         comments_count: Int,
         created_at: String,
-        user: AnnictUserEntity,
-        work: AnnictWorkEntity,
-        episode: AnnictEpisodeEntity
+        user: AnnictUserEntity?,
+        work: AnnictWorkEntity?,
+        episode: AnnictEpisodeEntity?
         ) {
         self.init()
         self.id = id
@@ -62,9 +62,9 @@ extension AnnictRecordEntity: Decodable {
             likes_count: e <| "likes_count",
             comments_count: e <| "comments_count",
             created_at: e <| "created_at",
-            user: e <| "user",
-            work: e <| "work",
-            episode: e <| "episode"
+            user: e <|? "user",
+            work: e <|? "work",
+            episode: e <|? "episode"
         )
     }
 }

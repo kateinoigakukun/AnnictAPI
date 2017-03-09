@@ -13,7 +13,11 @@ import RealmSwift
 public final class AnnictActivityEntity: Object {
     public dynamic var id: Int = 0
     public dynamic var user: AnnictUserEntity?
-    public dynamic var action: String = ""
+    public dynamic var _action: String = ""
+    public var action: AnnictActivityAction? {
+        return try? AnnictActivityAction.create(from: _action)
+    }
+
     public dynamic var created_at: String = ""
     public dynamic var work: AnnictWorkEntity?
 
@@ -23,27 +27,9 @@ public final class AnnictActivityEntity: Object {
 
     public let multiple_record = List<AnnictMultipleRecord>()
 
-    public dynamic var status_kind: String?
-
-
-    public final class AnnictMultipleRecord: Object, Decodable {
-        dynamic public var record: AnnictRecordEntity?
-        dynamic public var episode: AnnictEpisodeEntity?
-
-        public convenience init(
-            record: AnnictRecordEntity,
-            episode: AnnictEpisodeEntity
-            ) {
-            self.init()
-            self.record = record
-            self.episode = episode
-        }
-
-        public static func decode(_ e: Extractor) throws -> Self {
-            return try self.init(
-                record: e <| "record",
-                episode: e <| "episode")
-        }
+    public dynamic var _status_kind: String?
+    public var status_kind: AnnictStatusKind? {
+        return _status_kind.flatMap { try? AnnictStatusKind.create(from: $0) }
     }
 
     public convenience init(
@@ -60,7 +46,7 @@ public final class AnnictActivityEntity: Object {
         self.init()
         self.id = id
         self.user = user
-        self.action = action
+        self._action = action
         self.created_at = created_at
         self.work = work
 
@@ -70,7 +56,7 @@ public final class AnnictActivityEntity: Object {
             self.multiple_record.append(objectsIn: $0)
         }
 
-        self.status_kind = status_kind
+        self._status_kind = status_kind
 
     }
 
@@ -84,7 +70,7 @@ extension AnnictActivityEntity: Decodable {
     public static func decode(_ e: Extractor) throws -> Self {
         return try self.init(
             id: e <| "id",
-            user: e <| "id",
+            user: e <| "user",
             action: e <| "action",
             created_at: e <| "created_at",
             work: e <| "work",

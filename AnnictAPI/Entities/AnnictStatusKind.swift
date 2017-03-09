@@ -19,4 +19,23 @@ public enum AnnictStatusKind {
     public var description: String {
         return String(describing: self)
     }
+
+    public static func create(from: String) throws -> AnnictStatusKind {
+        switch from {
+        case "wanna_watch":
+            return .wanna_watch
+        case "watching":
+            return .watching
+        case "watched":
+            return .watched
+        case "on_hold":
+            return .on_hold
+        case "stop_watching":
+            return .stop_watching
+        case "no_select":
+            return .no_select
+        default:
+            throw AnnictError.parseError
+        }
+    }
 }
