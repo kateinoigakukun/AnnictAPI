@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A39DDACCDDC97F9B7CDE7E89BDA8AE05D6FBF655",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E022BA511C6D42C129822DC378A74E36115DA6E5" : 9223372036854775807,
+    "A39DDACCDDC97F9B7CDE7E89BDA8AE05D6FBF655" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9CEA3BD7-DF4D-4EF4-86A8-25E1EB12A4D3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E022BA511C6D42C129822DC378A74E36115DA6E5" : "..\/..",
+    "A39DDACCDDC97F9B7CDE7E89BDA8AE05D6FBF655" : "AnnictAPI\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AnnictAPI",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AnnictAPI.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kateinoigakukun\/AnnictAPI.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A39DDACCDDC97F9B7CDE7E89BDA8AE05D6FBF655"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "sabrina.mydns.jp:kateinoigakukun\/alphannict.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E022BA511C6D42C129822DC378A74E36115DA6E5"
+    }
+  ]
+}

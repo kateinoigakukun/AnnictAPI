@@ -20,6 +20,19 @@ public final class AnnictUserEntity: Object {
         guard let url_str = self._url else { return nil }
         return URL(string: url_str)
     }()
+
+    public dynamic var _avatar_url: String? = nil
+    public lazy var avatar_url: URL? = {
+        guard let url_str = self._avatar_url else { return nil }
+        return URL(string: url_str)
+    }()
+
+    public dynamic var _background_image_url: String? = nil
+    public lazy var background_image_url: URL? = {
+        guard let url_str = self._background_image_url else { return nil }
+        return URL(string: url_str)
+    }()
+
     public dynamic var records_count: Int = 0
 //    TODO: Date型にする
     public dynamic var created_at: String = ""
@@ -30,6 +43,8 @@ public final class AnnictUserEntity: Object {
         name: String,
         description: String,
         url: URL?,
+        avatar_url: URL?,
+        background_image_url: URL?,
         records_count: Int,
         created_at: String
         ) {
@@ -38,7 +53,9 @@ public final class AnnictUserEntity: Object {
         self.username = username
         self.name = name
         self.description_ = description
-        self.url = url
+        self._url = url?.absoluteString
+        self._avatar_url = avatar_url?.absoluteString
+        self._background_image_url = background_image_url?.absoluteString
         self.records_count = records_count
         self.created_at = created_at
     }
@@ -46,7 +63,7 @@ public final class AnnictUserEntity: Object {
         return "id"
     }
     override public static func ignoredProperties() -> [String] {
-        return ["url"]
+        return ["url", "avatar_url", "background_image_url"]
     }
 }
 
@@ -58,6 +75,8 @@ extension AnnictUserEntity: Decodable {
             name: e <| "name",
             description: e <| "description",
             url: e <|? "url",
+            avatar_url: e <|? "avatar_url",
+            background_image_url: e <|? "background_image_url",
             records_count: e <| "records_count",
             created_at: e <| "created_at")
     }
