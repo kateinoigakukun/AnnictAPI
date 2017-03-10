@@ -25,6 +25,7 @@ public final class AnnictRecords: AnnictRequest {
         _ = fields.map { parameters["fields"] = $0.join(",") }
         _ = filter_ids.map { parameters["filter_ids"] = $0.join(",") }
         _ = filter_episode_id.map { parameters["filter_episode_id"] = $0.description }
+        _ = filter_has_record_comment.map { parameters["filter_has_record_comment"] = $0.description }
         _ = page.map { parameters["page"] = $0.description }
         _ = per_page.map {parameters["per_page"] = $0.description }
         _ = sort_id.map { parameters["sort_id"] = $0.description }
@@ -53,6 +54,7 @@ public final class AnnictRecords: AnnictRequest {
     var fields: [FieldType]?
     var filter_ids: [Int]?
     var filter_episode_id: Int?
+    var filter_has_record_comment: Bool?
     var page: Int?
     var per_page: Int?
     var sort_id: AnnictSortType?
@@ -62,6 +64,7 @@ public final class AnnictRecords: AnnictRequest {
         fields: [FieldType]? = nil,
         filter_ids: [Int]? = nil,
         filter_episode_id: Int? = nil,
+        filter_has_record_comment: Bool? = nil,
         page: Int? = nil,
         per_page: Int? = nil,
         sort_id: AnnictSortType? = nil,
@@ -70,6 +73,7 @@ public final class AnnictRecords: AnnictRequest {
         self.fields = fields
         self.filter_ids = filter_ids
         self.filter_episode_id = filter_episode_id
+        self.filter_has_record_comment = filter_has_record_comment
         self.page = page
         self.per_page = per_page
         self.sort_id = sort_id

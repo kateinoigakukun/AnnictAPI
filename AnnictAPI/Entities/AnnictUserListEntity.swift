@@ -10,13 +10,13 @@ import Foundation
 import Himotoki
 
 final class AnnictUserListEntity {
-    public var users: [AnnictActivityEntity]
+    public var users: [AnnictUserEntity]
     public var total_count: Int
     public var next_page: Int?
     public var prev_page: Int?
 
     public required init(
-        users: [AnnictActivityEntity],
+        users: [AnnictUserEntity],
         total_count: Int,
         next_page: Int?,
         prev_page: Int?

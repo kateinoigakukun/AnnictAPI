@@ -13,6 +13,7 @@ import RealmSwift
 public final class AnnictEpisodeEntity: Object {
     public dynamic var id: Int = 0
     public dynamic var number: String? = nil
+    public dynamic var number_text: String? = nil
     public dynamic var sort_number: Int = 0
     public dynamic var title: String? = nil
     public dynamic var records_count: Int = 0
@@ -23,6 +24,7 @@ public final class AnnictEpisodeEntity: Object {
     convenience public init(
         id: Int,
         number: String?,
+        number_text: String?,
         sort_number: Int,
         title: String?,
         records_count: Int,
@@ -33,6 +35,7 @@ public final class AnnictEpisodeEntity: Object {
         self.init()
         self.id = id
         self.number = number
+        self.number_text = number_text
         self.sort_number = sort_number
         self.title = title
         self.records_count = records_count
@@ -51,6 +54,7 @@ extension AnnictEpisodeEntity: Decodable {
         return try self.init(
           id: e <| "id",
           number: e <|? "number",
+          number_text: e <|? "number_text",
           sort_number: e <| "sort_number",
           title: e <|? "title",
           records_count: e <| "records_count",
