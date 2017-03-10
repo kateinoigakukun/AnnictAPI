@@ -129,3 +129,58 @@ extension AnnictProgramListEntity: Decodable {
         )
     }
 }
+
+final class AnnictUserListEntity: AnnictPageEntity {
+    public var users: [AnnictUserEntity]
+
+
+    public required init(
+        users: [AnnictUserEntity],
+        total_count: Int,
+        next_page: Int?,
+        prev_page: Int?
+        ) {
+        self.users = users
+        super.init(next_page: next_page,
+                   prev_page: prev_page,
+                   total_count: total_count)
+    }
+}
+
+extension AnnictUserListEntity: Decodable {
+    public static func decode(_ e: Extractor) throws -> Self {
+        return try self.init(
+            users: e <|| "users",
+            total_count: e <| "total_count",
+            next_page: e <|? "next_page",
+            prev_page: e <|? "prev_page")
+    }
+}
+
+final public class AnnictActivityListEntity: AnnictPageEntity {
+    public var activities: [AnnictActivityEntity]
+
+    public required init(
+        activities: [AnnictActivityEntity],
+        total_count: Int,
+        next_page: Int?,
+        prev_page: Int?
+        ) {
+
+        self.activities = activities
+        super.init(next_page: next_page,
+                   prev_page: prev_page,
+                   total_count: total_count)
+    }
+}
+
+extension AnnictActivityListEntity: Decodable {
+    public static func decode(_ e: Extractor) throws -> Self {
+        return try self.init(
+            activities: e <|| "activities",
+            total_count: e <| "total_count",
+            next_page: e <|? "next_page",
+            prev_page: e <|? "prev_page")
+    }
+}
+
