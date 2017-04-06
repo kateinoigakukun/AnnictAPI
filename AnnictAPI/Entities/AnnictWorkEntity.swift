@@ -24,12 +24,16 @@ public final class AnnictWorkEntity: Object {
 //    =====================
     private dynamic var _official_site_url: String? = nil
     public lazy var official_site_url: URL? = {
-        guard let url_str = self._official_site_url else { return nil }
+        guard let url_str = self._official_site_url?.removingPercentEncoding else {
+            return nil
+        }
         return URL(string: url_str)
     }()
     private dynamic var _wikipedia_url: String? = nil
     public lazy var wikipedia_url: URL? = {
-        guard let url_str = self._wikipedia_url else { return nil }
+        guard let url_str = self._wikipedia_url?.removingPercentEncoding else {
+            return nil
+        }
         return URL(string: url_str)
     }()
     public dynamic var twitter_username: String? = nil
